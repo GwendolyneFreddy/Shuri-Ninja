@@ -1,6 +1,8 @@
 # Shuri-Ninja kit
 
-**Author:** Twinblades2
+Shuri-Ninja kit was created by Twinblades2, then ported to EE by Aalkaor and Gwendolyne.
+
+**Original Author:** Twinblades2
 
 **Support:** Aalkaor and Gwendolyne
 
@@ -11,6 +13,9 @@
 **Platform:** Windows
 
 
+Shuri-Ninja Support Forum: 
+
+Shuri-Ninja Homepage: 
 
 
 ## Overview
@@ -19,16 +24,51 @@
 Shuri Ninja kit created by Twinblades2, revised for EE by Aalkaor and Gwendolyne
 
 
+
+
 ## Compatibility
 
 This mod is designed to work on the following Infinity Engine games: aldur's Gate: Enhanced Edition (BGEE), Baldur's Gate II: Enhanced Edition (BG2EE), the original Baldur's Gate II (BG2 or just SoA) with the Throne of Bhaal (ToB) expansion, the conversion projects Baldur's Gate Trilogy (BGT) and Enhanced Edition Trilogy (EET).
 
-Though I am striving to make BuTcHeRy compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
+Though I am striving to make Shuri-Ninja compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
 
 - Shuri-Ninja is not compatible with Kit Revisions.
 
 
-You are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.
+Classical games player are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.
+
+
+
+
+## Installation
+
+#### Notes
+
+<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-shurininja.exe</strong>, uninstall all previously installed components and delete the shurininja folder.</em>
+
+<em>When installing or uninstalling, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
+
+<em><strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.</em>
+
+
+#### Enhanced Editions Note
+
+The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+
+
+#### Windows
+
+Shuri-Ninja for Windows is distributed as an extractable compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+
+Extract the contents of the mod archive into the folder of the game you wish to modify, using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. When properly extracted, your game directory will contain <strong>setup-shurininja.exe</strong> and the folder <strong>shurininja</strong>. To install, double-click <strong>setup-shurininja.exe</strong> and follow the instructions on screen.
+
+You can run <strong>setup-shurininja.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
+
+#### Note for Complete Uninstallation
+
+In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-shurininja --uninstall</strong> at the command line to remove all components without wading through prompts.
+
+
 
 
 ## Components
@@ -77,7 +117,20 @@ Disadvantages:
 #### 30. Shuri Ninja Kit may not wear any armor (EE only)
 
 
-## Versions history
+
+
+## Credits and Acknowledgements
+
+<div class="important">
+MYMOD is not developed, supported, or endorsed by BioWare™ or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by AUTEUR, based on material from the game Baldur's Gate II and its expansion.
+Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
+
+This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. However, it should not be sold, published, compiled or redistributed in any form without the consent of the author.
+</div>
+
+
+
+## Version history
 
 ##### Version 2.0.0 - October nn, 2018
 - tp2 split into components and commented for easier further updates.
