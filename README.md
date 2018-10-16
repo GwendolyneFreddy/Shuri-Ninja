@@ -18,12 +18,11 @@ Shuri-Ninja Support Forum:
 Shuri-Ninja Homepage: 
 
 
-
 ## Overview
 
 
-This mod adds a nex thief kit to the game: the Shuri Ninja kit.
-Created ùany years ago by Twinblades2, it has been rewritten to the WeiDU modern standard way of coding and ported to Enhanced Editions fames by Aalkaor and Gwendolyne
+Shuri Ninja kit created by Twinblades2, revised for EE by Aalkaor and Gwendolyne
+
 
 
 
@@ -37,6 +36,7 @@ Though I am striving to make Shuri-Ninja compatible with as many other mods as p
 
 
 Classical games player are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.
+
 
 
 
@@ -70,6 +70,7 @@ In addition to the methods above for removing individual components, you can com
 
 
 
+
 ## Components
 
 The installer includes the following components. The number of each is the component <em>DESIGNATED</em> number which gives it a fixed install position, lets other components detect it and allows automated installers like the BiG World Setup specify component choices.
@@ -77,8 +78,8 @@ The installer includes the following components. The number of each is the compo
 
 #### 10. Shuri Ninja Kit (legacy)
 
-Kit Description:
-The Shuri Ninjas are those trained by the Shurikai, an organisation of ninja assassins that operate across Kara-Tur. They are quick, deadly, masters of stealth and highly skilled in the use of oriental blades, hand thrown weapons and archery. It is guaranteed if one is marked by the Shurikai they will die that night. Their lethal skills have earned them the respect and intense hatred of Samurai and other rival ninja clans. Very few warriors have crossed blade with a shuri ninja and lived to tell the tale.
+
+SHURI NINJA: The Shuri Ninjas are those trained by the Shurikai, an organisation of ninja assassins that operate across Kara-Tur. They are quick, deadly, masters of stealth and highly skilled in the use of oriental blades, hand thrown weapons and archery. It is guaranteed if one is marked by the Shurikai they will die that night. Their lethal skills have earned them the respect and intense hatred of Samurai and other rival ninja clans. Very few warriors have crossed blade with a shuri ninja and lived to tell the tale.
 
 Many leave the Shurikai to follow their own paths at the cost of constantly watching their backs for the blades of former comrades. Their services are highly sought after by the western thief guilds if they make it to the western lands alive. None dare double cross them as entire guilds have met their deaths by a single shuri ninja. Due to the rarity of demi-humans in Kara-Tur only humans are trusted with the secrets of Shurikai Ninjutsu.
 
@@ -110,12 +111,11 @@ Disadvantages:
 - Only humans can become Shuri Ninjas.
 
 
-The two next components don't need further explanation, I guess. &#128521;
-
 #### 20. Shuri Ninja Kit may not wear heavier armor than leather (EE only)
 
 
 #### 30. Shuri Ninja Kit may not wear any armor (EE only)
+
 
 
 
@@ -126,6 +126,7 @@ The two next components don't need further explanation, I guess. &#128521;
 ###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
 
 ###### This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. However, it should not be sold, published, compiled or redistributed in any form without the consent of the author.
+
 
 
 
