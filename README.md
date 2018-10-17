@@ -14,14 +14,14 @@
 Shuri-Ninja Support Forum: 
 
 Shuri-Ninja Homepage: 
-
+</br></br>
 
 
 ## Overview
 
 
 This mod adds a new thief kit to the game: the Shuri Ninja.
-Created many years ago by Twinblades2, it has been rewritten to the WeiDU modern standard way of coding and ported to Enhanced Editions games by Aalkaor and Gwendolyne
+Created many years ago by Twinblades2, it has been rewritten to the WeiDU modern standard way of coding and ported to Enhanced Editions games by Aalkaor and Gwendolyne.</br></br>
 
 
 
@@ -34,7 +34,7 @@ Though I am striving to make Shuri-Ninja compatible with as many other mods as p
 - Shuri-Ninja is not compatible with Kit Revisions.
 
 
-Classical games player are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.
+Classical games players are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.</br></br>
 
 
 
@@ -65,7 +65,8 @@ Shuri-Ninja for Windows is distributed as an extractable compressed archive and 
 
 Extract the contents of the mod archive into the folder of the game you wish to modify, using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. When properly extracted, your game directory will contain <strong>setup-shurininja.exe</strong> and the folder <strong>shurininja</strong>. To install, double-click <strong>setup-shurininja.exe</strong> and follow the instructions on screen.
 
-You can run <strong>setup-shurininja.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
+You can run <strong>setup-shurininja.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.</br></br>
+
 
 
 
@@ -114,7 +115,7 @@ The two next components don't need further explanation, I guess. &#128521;
 #### 20. Shuri Ninja Kit may not wear heavier armor than leather (EE only)
 
 
-#### 30. Shuri Ninja Kit may not wear any armor (EE only)
+#### 30. Shuri Ninja Kit may not wear any armor (EE only)</br></br>
 
 
 
@@ -124,25 +125,25 @@ The two next components don't need further explanation, I guess. &#128521;
 ###### Shuri Ninja is not developed, supported, or endorsed by BioWare™ or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by Twinblades2, based on material from the game Baldur's Gate II and its expansion.
 ###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
 
-###### This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. However, it should not be sold, published, compiled or redistributed in any form without the consent of the author.
+###### This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. However, it should not be sold, published, compiled or redistributed in any form without the consent of the author.</br></br>
 
 
 
 ## Version history
 
-##### Version 2.0.0 - October nn, 2018
+#### Version 2.0.0 - October nn, 2018
 - tp2 split into components and commented for easier further updates.
 - Reorganized components (DESIGNATED numbers).
 - Added two sub-components (EE only): Shuri Ninja Kit may not wear heavier armor than leather and may not wear any armor.
 - Added BG2EE compatibility (probably with EET, but not yet tested).
 - No longer overwrites system files.
-- Uses HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.</li>
+- Used HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.</li>
 - Deleted unused files from mod folder.
 - Updated readme (Shri-Ninja now supports translated readmes).
 - Added French translation, including readme (Aalkaor and Gwendolyne).
 - Traification.
-- Updated installer <acronym title="Weimer Dialogue Utility">WeiDU</acronym> to v246.
+- Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer to v246.
 
 
-##### Version 1 - February 10, 2004
+#### Version 1 - February 10, 2004
 - Initial release
