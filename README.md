@@ -6,7 +6,7 @@
 
 **Version:** 2.0.0
 
-**Languages:** English, French
+**Languages:** English, <a href="README-FR.md">French</a>
 
 **Platform:** Windows
 
@@ -107,7 +107,7 @@ Disadvantages:
 - Can't use '2-handed weapon' and 'sword and shield' style.
 - Can't dual class.
 - Can only be a Chaotic alignment.
-- Only humans can become Shuri Ninjas.
+- Only humans can become Shuri Ninjas.</br>
 
 
 The two next components don't need further explanation, I guess. &#128521;
