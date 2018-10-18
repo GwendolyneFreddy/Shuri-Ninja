@@ -2,7 +2,7 @@
 
 **Auteur original :** Twinblades2
 
-**Support :** Aalkaor et Gwendolyne
+**Support :** Aalkaor et Freddy_Gwendo (aka Gwendolyne)
 
 **Version :** 2.0.0
 
@@ -36,7 +36,7 @@ Bien que je m'efforce de le rendre compatible avec le plus grand nombre possible
 - Shuri-Ninja n'est pas compatible avec Kit Revisions.
 
 
-Si vous jouez avec BG2-ToB ou BGT, je vous recommande fortement d'installer la dernière version du BG2 Fixpack (http://www.gibberlings3.net/bg2fixpack/) avant d'installer ce mod.</br></br>
+Si vous jouez avec BG2-ToB ou BGT, je vous recommande fortement d'installer la dernière version du <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> avant d'installer ce mod.</br></br>
 
 
 
@@ -82,7 +82,7 @@ Le programme d'installation comprend les composants suivants. Chacun possède un 
 
 Description du profil :
 
-Les shuri ninjas sont formés par le Shurikai, une organisation d’assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe passe la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des Samouraïs et des autres clans rivaux de ninjas. Rares sont en effet les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
+Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe passe la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des Samouraïs et des autres clans rivaux de ninjas. Rares sont en effet les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
 
 Beaucoup s'affranchissent du Shurikai pour suivre leur propre voie, même s'il doivent constamment surveiller leurs arrières pour ne pas être victimes de la lame de leurs anciens compagnons d'armes. S'ils parviennent à rejoindre sans encombre les contrées occidentales, ils savent que les guildes de voleurs locales apprécient et recherchent ardemment leurs services. Des guildes entières ayant été décimées par un seul shuri ninja, personne n'ose les trahir. Le Kara-Tur comptant très peu de demi-humains, seuls les humains sont autorisés à bénéficier des enseignements secrets du Shurikai Ninjutsu.
 
