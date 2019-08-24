@@ -1,0 +1,104 @@
+
+/* ============================================================================================== *
+ *  MACRO GW_READ_INI_FILE : READS an .ini file (lit un fichier .ini).                            *
+ * ----------------------------------------------------------------------------------------+----- *
+ *  This WeiDU action macro reads the configuration options values set in "ini_to_read.ini" file  *
+ *  and writes them into sotm_ini_var.                                                            *
+ *  ini key values are treated case-insensitive.                                                  *
+ *  (Wrote for Kjeron but borrowed from CamDawg's most efficient version).                        *
+ * ============================================================================================== */
+
+DEFINE_ACTION_MACRO ~GW_READ_INI_FILE~
+BEGIN
+
+	LOCAL_SPRINT key ""
+	ACTION_IF FILE_EXISTS "%ini_to_read%" BEGIN
+		COPY - ~%ini_to_read%~ ~override~
+			REPLACE_EVALUATE ~^\([^ %TAB%%WNL%]+\) *= *\([^%WNL%$]+\)~
+				BEGIN
+				// key must start line and cannot contain whitespace
+				// value is everything after the "=" until the newline/end
+					SPRINT key "%MATCH1%"
+					TO_LOWER key
+					TEXT_SPRINT $shuri_ini_var(~%key%~) ~%MATCH2%~
+				END
+			~~
+		END
+
+END
+
+
+/* ============================================================== *
+ *  FUNCTION check_ini : CHECKS an ini value (case-insensitive).  *
+ * -------------------------------------------------------------- *
+ *  Borrowed from CamDawg.                                        *
+ * ============================================================== */
+
+DEFINE_PATCH_FUNCTION ~check_ini~
+	STR_VAR ini=""
+	RET value
+BEGIN
+
+	TO_LOWER ini
+	PATCH_IF !VARIABLE_IS_SET $shuri_ini_var(~%ini%~) BEGIN
+		SPRINT value 0
+	END ELSE BEGIN
+		SPRINT value $shuri_ini_var(~%ini%~)
+	END
+
+END
+
+DEFINE_ACTION_FUNCTION ~check_ini~
+	STR_VAR ini=""
+	RET value
+BEGIN
+
+	OUTER_PATCH "" BEGIN
+		LPF ~check_ini~ STR_VAR ini RET value END
+	END
+
+END
+
+
+/* ================================================================================================== *
+ *  FUNCTION GW_CHECK_LEATHER : CHECKS if itm file is a Studded leather or a Hide armor.              *
+ * -------------------------------------------------------------------------------------------------- *
+ *  Returns GW_unusable = 1, used in first_component.tpa to add an usuability flag for Shuri Ninjas.  *
+ * ================================================================================================== */
+
+DEFINE_PATCH_FUNCTION ~GW_CHECK_LEATHER~
+	RET	GW_unusable
+BEGIN
+
+	SET	GW_unusable = 0
+	SET	GW_Studded	= 0				// 1 = Studed leather armor	if opcode 0 & paramètre2 = 8 (Slashing Weapons) present in global effects list.
+	SET	GW_Hide	= 0					// 1 = Hide armor if Min Strength >= 6 (not very elegant, but it works!).
+
+	READ_LONG	0x6a fx_off			// Feature Block Table offset
+	READ_SHORT	0x6e eq_eff_index	// Casting Feature Block offset	- Index into equipping feature blocks
+	READ_SHORT	0x70 eq_eff_count	// Casting Feature Block count
+	SET GW_fx_type = 0
+
+	FOR (i = 0 ; i < eq_eff_count ; ++i) BEGIN
+		PATCH_IF (GW_Studded = 0) AND (GW_Hide = 0) BEGIN
+			READ_SHORT (fx_off + (0x08 * GW_fx_type) + ((eq_eff_index + i * (0x30 + (0xd8 * GW_fx_type))))) opcode ELSE 0
+			PATCH_IF (opcode = 0) BEGIN			// Opcode Stat: AC vs. Damage Type Modifier [0]
+				READ_LONG (fx_off + 0x08 + (0x10 * GW_fx_type) + ((eq_eff_index + i * (0x30 + (0xd8 * GW_fx_type))))) parameter2
+				PATCH_IF (parameter2 = 8) BEGIN	// 8 Slashing Weapons specific to Studded leather armors.
+					SET GW_Studded = 1
+					SET GW_unusable = 1
+					SET i = eq_eff_count
+				END	// of PATCH_IF (parameter2 = 8)
+			END		// of PATCH_IF (opcode = 0)
+		END			// of PATCH_IF (GW_Studded = 0) AND (GW_Hide = 0) 
+	END				// of looping through effects
+
+// It is faster to check this first, but safer to proceed it after Studded Leather Armors.
+	PATCH_IF (GW_Hide = 0) AND (GW_unusable = 0) BEGIN
+		PATCH_IF (SHORT_AT 0x26 >= 6) BEGIN		// Minimun strength >=6 (Leather <= 4)
+			SET GW_Hide = 1
+			SET GW_unusable = 1
+		END			// of PATCH_IF (SHORT_AT 0x26 >= 6)
+	END				// of PATCH_IF (GW_Hide = 0) AND (GW_unusable = 0)
+
+END					// of DEFINE_PATCH_FUNCTION
