@@ -17,7 +17,8 @@
 
 ## <a name="intro" id="intro"></a>Présentation
 
-Ce module ajoute un nouveau profil de voleur dans le jeu : le Shuri Ninja.</br>
+Ce module ajoute un nouveau profil de voleur dans le jeu : le Shuri Ninja.
+
 Créé il y a de nombreuses années par Twinblades2, il a été réécrit dans les standards modernes de code WeiDU et rendu compatible pour les jeux Enhanced par Aalkaor et Freddy_Gwendo.</br></br>
 
 
@@ -94,29 +95,36 @@ Le programme d'installation comprend les composants suivants. Chacun possède un 
 
 #### 10. Profil de Shuri Ninja original
 
-Description du profil :
-
-Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe passe la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des Samouraïs et des autres clans rivaux de ninjas. Rares sont en effet les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
+Description du profil :</br>
+Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe pas la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des samouraïs et des autres clans rivaux de ninjas. Rares sont en effet les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
 
 Beaucoup s'affranchissent du Shurikai pour suivre leur propre voie, même s'il doivent constamment surveiller leurs arrières pour ne pas être victimes de la lame de leurs anciens compagnons d'armes. S'ils parviennent à rejoindre sans encombre les contrées occidentales, ils savent que les guildes de voleurs locales apprécient et recherchent ardemment leurs services. Des guildes entières ayant été décimées par un seul shuri ninja, personne n'ose les trahir. Le Kara-Tur comptant très peu de demi-humains, seuls les humains sont autorisés à bénéficier des enseignements secrets du Shurikai Ninjutsu.
 
 Avantages :
 - +20 % en Furtivité.
 - +2 à la Dextérité.
-- À haut niveau, il obtient les capacités spéciales du guerrier.
+- Obtient les capacités spéciales du guerrier à haut niveau.
 - Bonus de 1 au toucher et aux dégâts tous les 4 niveaux (à partir du niveau 4).
 - Bonus de 1 à la CA tous les 5 niveaux (à partir du niveau 5).
 - Peut se spécialiser (deux étoiles) dans le maniement du katana, du cimeterre, des dagues, des fléchettes et de l'arc court.
 - Peut se spécialiser (deux étoiles) dans le style de combat d'arme à une main et allouer trois étoiles dans le style de combat à deux armes.
 
 À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin.
-  * Level 5 (Blue Belt): They learn to detect illusions using True sight twice a day.
-  * Level 10 (Purple Belt): They learn to strike at pressure points with their bare hands twice a day. Opponents get stunned unless they made a save.
-  * Level 15 (Red Belt): They learn to maximise the damage they deal for a limited time once a day (Blinding Strike). They gain another use every 10 levels.
-  * Level 20 (Brown Belt): They learn the monk's quivering palm which they can use once a day. Opponents will die from the blow unless a save is made (The secret was stolen from an eastern monastery). 
-  * Level 25 (Black Belt): They learn to coat their weapons with poison once a day.
-  * Level 30: They learn to strengthen their minds against all mental attacks once a day (Chaotic Commands). Their stealth increases by another 20%.
-  * Level 35 (First Dan): Their skill in combat increases (+1 bonus THAC0). They can coat their weapons with poison once more a day.
+  * Au niveau 5 (ceinture bleue), il gagne la capacité Vision véritable deux fois par jour pour détecter les illusions.
+  * Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée
+  * Au niveau 15 (ceinture rouge), il peut utiliser la capacité Frappe éclair une fois par jour, tous les 10 niveaux d'expérience. Pendant 10 secondes, toutes ses attaques infligent le maximum de dégâts.
+  * Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
+  * Au niveau 25 (ceinture noire), il peut enduire son arme de poison une fois par jour (capacité Arme empoisonnée).
+  * Au niveau 30, il peut protéger son esprit de toute attaque mentale une fois par jour (capacité Ordres chaotiques) et il gagne 20 % supplémentaires en Furtivité.
+  * Au niveau 35 (premier dan), il est encore plus fort au combat (bonus de 1 au TAC0) et gagne une utilisation supplémentaire de la capacité Arme empoisonnée.
+
+ARME EMPOISONNÉE :</br>
+Chaque coup réussi au cours du prochain round empoisonnera la cible. Chaque cible ne peut être affectée qu'une fois par round. Le montant des dégâts de poison dépend du niveau du personnage :
+1er : la cible subit 1 point de dégât de poison par seconde pendant 6 secondes (annulé par une sauvegarde contre la mort à +1)
+5ème : la cible subit 1 point de dégât de poison par seconde pendant 12 secondes (annulé par une sauvegarde contre la mort) et subit immédiatement 2 points de dégâts de poison (sans sauvegarde)
+9ème : la cible subit 1 point de dégât de poison par seconde pendant 18 secondes (annulé par une sauvegarde contre la mort à -1) et subit immédiatement 4 points de dégâts de poison (sans sauvegarde)
+13ème : la cible subit 1 point de dégât de poison par seconde pendant 24 secondes (annulé par une sauvegarde contre la mort à -2) et subit immédiatement 6 points de dégâts de poison (sans sauvegarde)
+
 
 Désavantages :
 - Ne peut pas poser de pièges.
@@ -125,7 +133,7 @@ Désavantages :
 - Ne peut pas être compétent dans les styles de combat armes à deux mains et épée et bouclier.
 - Ne peut pas se jumeler.
 - Doit être d'alignement chaotique.
-- Seuls les humains peuvent devenir Shuri Ninja.</br>
+- Doit être un humain.
 
 ## 
 

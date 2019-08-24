@@ -15,9 +15,10 @@
 <hr>
 
 
-## <a name="intro" id="intro"></a>## Overview
+## <a name="intro" id="intro"></a> Overview
 
-This mod adds a new thief kit to the game: the Shuri Ninja.</br>
+This mod adds a new thief kit to the game: the Shuri Ninja.
+
 Created many years ago by Twinblades2, it has been rewritten to the WeiDU modern standard way of coding and ported to Enhanced Editions games by Aalkaor and Gwendolyne.</br></br>
 
 
@@ -92,7 +93,7 @@ The installer includes the following components. The number of each is the compo
 
 #### 10. Shuri Ninja Kit (legacy)
 
-Kit Description:
+Kit Description:</br>
 Shuri Ninja are trained by the Shurikai, an organisation of ninja assassins that operate across Kara-Tur. They are quick, deadly, masters of stealth and highly skilled in the use of oriental blades, hand thrown weapons and archery. It is guaranteed if one is marked by the Shurikai they will die that night. Their lethal skills have earned them the respect and intense hatred of Samurai and other rival ninja clans. Very few warriors have crossed blade with a shuri ninja and lived to tell the tale.
 
 Many leave the Shurikai to follow their own paths at the cost of constantly watching their backs for the blades of former comrades. Their services are highly sought after by the western thief guilds if they make it to the western lands alive. None dare double cross them as entire guilds have met their deaths by a single shuri ninja. Due to the rarity of demi-humans in Kara-Tur only humans are trusted with the secrets of Shurikai Ninjutsu.
@@ -115,12 +116,12 @@ Advantages:
   * 30th level: Learns to strengthen their minds against all mental attacks (may use the Chaotic Commands ability once per day). Gains an additional +20% bonus to Hide In Shadows and Move Silently.
   * 35th level (First Dan): Their skill in combat increases (+1 bonus THAC0). Gains an additional use of the Poison Weapon ability.
 
-POISON WEAPON
+POISON WEAPON</br>
 Each successful hit within the next 5 rounds will inject poison into the target. Each target can only be affected once per round. The amount of poison damage depends on the character's level:
 1st - Target suffers 1 poison damage per second for 6 seconds (Save vs. Death at +1 negates)
 5th - Target suffers 1 poison damage per second for 12 seconds (Save vs. Death negates), and also immediately suffers 2 poison damage (no save)
 9th - Target suffers 1 poison damage per second for 18 seconds (Save vs. Death at -1 negates), and also immediately suffers 4 poison damage (no save)
-13th - Target suffers 1 poison damage per second for 24 seconds (Save vs. Death at -2 negates), and also immediately suffers 6 poison damage (no save)
+13th - Target suffers 1 poison damage per second for 24 seconds (Save vs. Death at -2 negates), and also immediately suffers 6 poison damage (no save)</br>
 
 
 Disadvantages:
@@ -132,10 +133,9 @@ Disadvantages:
 - Alignment restricted to any chaotic.
 - Race restricted to human.
 
-
 ## 
 
-The two next components don't need further explanation, I guess. &#128521;
+The two next components don't need further explanation, I guess. &#128521;</br>
 
 
 #### 20. Shuri Ninja Kit may not wear heavier armor than leather (EE only)
@@ -160,7 +160,7 @@ The two next components don't need further explanation, I guess. &#128521;
 - <a href="https://www.baldursgateworld.fr/lacouronne/members/freddy_gwendo.html">Gwendolyne</a> for having completed the WeiDU coding, made it EE compatible, and proofread the translation.
 
 
-If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">mod forum</a>.</br>
+If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="next to come">mod forum</a>.</br>
 
 ## 
 
