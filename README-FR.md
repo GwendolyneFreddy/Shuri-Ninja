@@ -119,11 +119,11 @@ Avantages :
   * Au niveau 35 (premier dan), il est encore plus fort au combat (bonus de 1 au TAC0) et gagne une utilisation supplémentaire de la capacité Arme empoisonnée.
 
 ARME EMPOISONNÉE :</br>
-Chaque coup réussi au cours du prochain round empoisonnera la cible. Chaque cible ne peut être affectée qu'une fois par round. Le montant des dégâts de poison dépend du niveau du personnage :
-1er : la cible subit 1 point de dégât de poison par seconde pendant 6 secondes (annulé par une sauvegarde contre la mort à +1)
-5ème : la cible subit 1 point de dégât de poison par seconde pendant 12 secondes (annulé par une sauvegarde contre la mort) et subit immédiatement 2 points de dégâts de poison (sans sauvegarde)
-9ème : la cible subit 1 point de dégât de poison par seconde pendant 18 secondes (annulé par une sauvegarde contre la mort à -1) et subit immédiatement 4 points de dégâts de poison (sans sauvegarde)
-13ème : la cible subit 1 point de dégât de poison par seconde pendant 24 secondes (annulé par une sauvegarde contre la mort à -2) et subit immédiatement 6 points de dégâts de poison (sans sauvegarde)
+Chaque coup réussi au cours du prochain round empoisonnera la cible. Chaque cible ne peut être affectée qu'une fois par round. Le montant des dégâts de poison dépend du niveau du personnage :</br>
+1er : la cible subit 1 point de dégât de poison par seconde pendant 6 secondes (annulé par une sauvegarde contre la mort à +1)</br>
+5ème : la cible subit 1 point de dégât de poison par seconde pendant 12 secondes (annulé par une sauvegarde contre la mort) et subit immédiatement 2 points de dégâts de poison (sans sauvegarde)</br>
+9ème : la cible subit 1 point de dégât de poison par seconde pendant 18 secondes (annulé par une sauvegarde contre la mort à -1) et subit immédiatement 4 points de dégâts de poison (sans sauvegarde)</br>
+13ème : la cible subit 1 point de dégât de poison par seconde pendant 24 secondes (annulé par une sauvegarde contre la mort à -2) et subit immédiatement 6 points de dégâts de poison (sans sauvegarde)</br>
 
 
 Désavantages :

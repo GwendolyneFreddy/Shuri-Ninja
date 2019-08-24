@@ -117,10 +117,10 @@ Advantages:
   * 35th level (First Dan): Their skill in combat increases (+1 bonus THAC0). Gains an additional use of the Poison Weapon ability.
 
 POISON WEAPON</br>
-Each successful hit within the next 5 rounds will inject poison into the target. Each target can only be affected once per round. The amount of poison damage depends on the character's level:
-1st - Target suffers 1 poison damage per second for 6 seconds (Save vs. Death at +1 negates)
-5th - Target suffers 1 poison damage per second for 12 seconds (Save vs. Death negates), and also immediately suffers 2 poison damage (no save)
-9th - Target suffers 1 poison damage per second for 18 seconds (Save vs. Death at -1 negates), and also immediately suffers 4 poison damage (no save)
+Each successful hit within the next 5 rounds will inject poison into the target. Each target can only be affected once per round. The amount of poison damage depends on the character's level:</br>
+1st - Target suffers 1 poison damage per second for 6 seconds (Save vs. Death at +1 negates)</br>
+5th - Target suffers 1 poison damage per second for 12 seconds (Save vs. Death negates), and also immediately suffers 2 poison damage (no save)</br>
+9th - Target suffers 1 poison damage per second for 18 seconds (Save vs. Death at -1 negates), and also immediately suffers 4 poison damage (no save)</br>
 13th - Target suffers 1 poison damage per second for 24 seconds (Save vs. Death at -2 negates), and also immediately suffers 6 poison damage (no save)</br>
 
 
