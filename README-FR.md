@@ -156,8 +156,8 @@ Je pense que les deux composants suivants ne nécessitent pas de description... &
 
 #### Remerciements :
 
-- <a href="https://www.baldursgateworld.fr/lacouronne/members/aalkaor.html">Aalkaor</a> pour avoir déterré ce mod, l(avoir traduit en français, commencé le code WeiDU et initié l'idée de le rendre compatible avec les jeux EE.
-- <a href="https://www.baldursgateworld.fr/lacouronne/members/freddy_gwendo.html">Gwendolyne</a> pour avoir terminé le code WeiDU, l'avoir rendu compatible avec les hjeux EE et avoir relu l atraduction.
+- <a href="https://www.baldursgateworld.fr/lacouronne/members/aalkaor.html">Aalkaor</a> pour avoir déterré ce mod, l'avoir traduit en français, commencé le code WeiDU et initié l'idée de le rendre compatible avec les jeux EE.
+- <a href="https://www.baldursgateworld.fr/lacouronne/members/freddy_gwendo.html">Gwendolyne</a> pour avoir terminé le code WeiDU, l'avoir rendu compatible avec les hjeux EE et avoir relu la traduction.
 
 ## 
 

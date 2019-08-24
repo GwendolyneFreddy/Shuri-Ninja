@@ -140,8 +140,8 @@ Crédits et remerciements
 
 - Remerciements
 
-    - Aalkaorpour avoir déterré ce mod, l(avoir traduit en français, commencé le code WeiDU et initié l'idée de le rendre compatible avec les jeux EE.
-    - Gwendolyne pour avoir terminé le code WeiDU, l'avoir rendu compatible avec les hjeux EE et avoir relu l atraduction.
+    - Aalkaor pour avoir déterré ce mod, l'avoir traduit en français, commencé le code WeiDU et initié l'idée de le rendre compatible avec les jeux EE.
+    - Gwendolyne pour avoir terminé le code WeiDU, l'avoir rendu compatible avec les hjeux EE et avoir relu la traduction.
 
 
 - Information sur les droits d'auteur
