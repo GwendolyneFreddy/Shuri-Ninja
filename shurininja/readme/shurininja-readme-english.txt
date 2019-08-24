@@ -167,6 +167,7 @@ Version 2.0.0 - September nn, 2019
 - Updated readme (Shri-Ninja now supports translated readmes).
 - Added French translation, including readme (Aalkaor and Gwendolyne).
 - Traification.
+- Added shurininja.ini metadata file to support AL|EN's "Project Infinity".
 - Updated installer WeiDU to v246.
 
 

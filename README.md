@@ -190,6 +190,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Updated readme (Shri-Ninja now supports translated readmes).
 - Added French translation, including readme (Aalkaor and Gwendolyne).
 - Traification.
+- Added shurininja.ini metadata file to support AL|EN's "Project Infinity".
 - Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer to v246.
 
 ## 

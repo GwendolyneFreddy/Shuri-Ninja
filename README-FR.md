@@ -188,6 +188,7 @@ Note du traducteur : l'historique n'est volontairement pas traduit afin de facil
 - Updated readme (Shri-Ninja now supports translated readmes).
 - Added French translation, including readme (Aalkaor and Gwendolyne).
 - Traification.
+- Added shurininja.ini metadata file to support AL|EN's "Project Infinity".
 - Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer to v246.
 
 ## 
