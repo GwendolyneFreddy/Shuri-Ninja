@@ -148,7 +148,7 @@ COPY ~%MOD_FOLDER%/spells/gwshur3.spl~	~override~
  * ========================================== */
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
-	TO_LOWER %SOURCE_DEST%
+//	TO_LOWER %SOURCE_DEST%
 	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
 		READ_BYTE 0x18 flags1
 		PATCH_IF ((flags1 & BIT3) = BIT3) BEGIN			// Movable, otherwise useless.
