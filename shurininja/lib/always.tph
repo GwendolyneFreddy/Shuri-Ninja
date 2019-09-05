@@ -19,7 +19,6 @@ ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
 
 	CLEAR_EVERYTHING
 	SILENT
-	OUTER_SPRINT configuration-default "shurininja.ini"		// default configuration file to read initial configuration options
 
 
 	/* -------------------------------------------------------------------------------- *
@@ -36,9 +35,9 @@ ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
 	OUTER_SET is_iwdee = (GAME_IS "iwdee") ? 1 : 0								// iwdee
 
 
-	/* ---------------------------------- *
-	 *    general macros and functions    *
-	 * ---------------------------------- */
+	/* --------------------------------------------------------------------------- *
+	 *    Loads in any shared function libraries (general macros and functions)    *
+	 * --------------------------------------------------------------------------- */
 
 	INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tph~		// Shared general functions and macros library (Bibliothèque de fonctions et de macros générales).
 	INCLUDE ~%MOD_FOLDER%/lib/fl#add_kit_ee.tpa~	// An ADD_KIT supplement for EE-type games
@@ -48,14 +47,28 @@ PRINT "CONTROL VARIABLES for DEBUGGING:
 is_ee = %is_ee% - is_tob = %is_tob% - is_tutu %is_tutu% - is_bgee = %is_bgee% - is_sod = %is_sod% - is_bg2ee = %is_bg2ee% - is_eet = %is_eet% - is_iwdee = %is_iwdee%"
 
 
-	/* ---------------------- *
-	 *  Creates a blank file  *
-	 * ---------------------- */
+	/* -------------------------- *
+	 *    Creates a blank file    *
+	 * -------------------------- */
 SILENT
 <<<<<<<< .../shurininja-inline/blank
 
 >>>>>>>>
 PRINT "1 shuri_force_tra_rebuild = %shuri_force_tra_rebuild%"
+
+	/* ----------------------------------------------------------- *
+	 *    Sets the default variables if they're not set already    *
+	 * ----------------------------------------------------------- */
+
+	OUTER_SPRINT configuration-default "shurininja.ini"		// default configuration file to read initial configuration options
+
+	ACTION_IF !VARIABLE_IS_SET base_language BEGIN
+		OUTER_SPRINT base_language "english"
+	END
+
+	// Handling special classic game engine restriction: kit descriptions can't exceed 4815 characters, or the game crashes at chargen!
+	OUTER_SET tob_string = (is_tob = 1) ? 1000 : 0
+
 
 	/* -------------------------------------- *
 	 *    Reading .ini configuration files    *
@@ -66,18 +79,6 @@ PRINT "configuration-default = %configuration-default%"
 		LAM ~GW_READ_INI_FILE~
 	END
 PRINT "2 shuri_force_tra_rebuild = %shuri_force_tra_rebuild%"
-
-	/* ----------------------- *
-	 *    general variables    *
-	 * ----------------------- */
-
-	ACTION_IF !VARIABLE_IS_SET base_language BEGIN
-		OUTER_SPRINT base_language "english"
-	END
-
-	// Handling special classic game engine restriction: kit descriptions can't exceed 4815 characters, or the game crashes at chargen!
-	OUTER_SET tob_string = (is_tob = 1) ? 1000 : 0
-
 
 	/* --------------------------------------------------------------------------------- *
 	 *                     Handling of correctly formatted tra-files                     *
