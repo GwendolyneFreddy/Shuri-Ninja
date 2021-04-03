@@ -1,12 +1,12 @@
 
-![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/Shuri-Ninja?include_prereleases&color=darkred)<a name="top" id="top"></a>
+![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/Shuri-Ninja?include_prereleases&color=gold)<a name="top" id="top"></a>
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/GwendolyneFreddy/Shuri-Ninja?color=gold)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French&color=limegreen)
 <a href="README-FR.md"><img align="right" src="shurininja/readme/images/fr-flag-32.png" title="Readme français"></a>
 
 
-<div align="center"><h1>Shuri-Ninja - Thief kit (WIP)</h1>
+<div align="center"><h1>Shuri Ninja - Thief kit (WIP)</h1>
 
 <h3>A mod for Baldur's Gate II:ToB (original and EE games),<br>
 Baldur's Gate Trilogy, Tutu, BG:EE, SoD and EET<h3>
@@ -83,7 +83,7 @@ If you encounter any bugs, please <a href="">report them on the forum!</a>
 Here is the recommended installation order:
 - Please install Shuri Ninja after ToBEx, BG2 Fixpack and EET.
 - Please install Shuri Ninja before EET_end, and any final "biffing" routines.
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+<div align="right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -150,7 +150,7 @@ To install, run **`weinstall setup-shurininja`** in your game folder. Then run *
 #### Note for Complete Un-installation
 
 In addition to the methods above for removing individual components, you can completely un-install the mod using **`setup-shurininja --uninstall`** at the command line to remove all components without wading through prompts.
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+<div align="right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -218,7 +218,7 @@ The two next components don't need further explanation, I guess. &#128521;</br>
 ## 
 
 #### 30. Shuri Ninja Kit may not wear any armor (EE only)</br>
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+<div align="right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -263,7 +263,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 ###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
 
 ###### This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. However, it should not be sold, published, compiled or redistributed in any form without the consent of the author.<br>
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+<div align="right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -272,29 +272,22 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 ## <a name="versions" id="versions"></a>Versions History
 
 ##### Version 2.0.0 &nbsp;(April 4, 2021)
-Fixed wring proficiencies pips
-COPY ~ShuriNin/ImpTHAC0.spl~    ~override~
-COPY ~ShuriNin/ChaCmnds.spl~    ~override~
-
-
-AT_INTERACTIVE_EXIT ~VIEW ShuriNin/Shurinin.txt~
 
 - Added *shurininja.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *Setup-Shurinin.tp2* -> *shurininja.tp2* to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
-- Restored `VERSION` flag.
+- Added `VERSION` flag.
 - Replaced `AT_INTERACTIVE_EXIT` deprecated command with `README`.
 - Added `HANDLE_CHARSETS` function to convert string entries for EE games.
 - Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
 - Added components `DESIGNATED` numbers and "*ruad_soa*", "*ruad_soa*" and "*ruad_tob*" `LABELS.
 - Added "*always.tpa*" library.
-- Externalized tp2 code into *ruad_tob.tpa* libraries for more comfortable readability and maintenance. :wink:.
+- Externalized tp2 code into *main_component.tpa* libraries for more comfortable readability and maintenance. :wink:.
 - Commented code as much as possible.
-- Added two sub-components (EE only): Shuri Ninja Kit may not wear heavier armor than leather and may not wear any armor.
+- Added two sub-components (EE only): "*Shuri Ninja may not wear heavier armor than leather*" and "*Shuri Ninja may not wear any armor*".
 - Added native BG:EE and BG2EE compatibility (probably with EET, but not yet tested).
 - No longer overwrites system files.
-- Used HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
-- Updated and renamed readme file to "*infinityanimations-readme-%LANGUAGE%.html*" (Shuri Ninja now supports translated readmes).
+- Updated and renamed readme file to "*shurininja-readme-%LANGUAGE%.txt*" (Shuri Ninja now supports translated readmes).
 - Proofread English texts (Gwendolyne).
 - Added French translation, including readme (Aalkaor and Gwendolyne).
 - Traification. Feel free to provide me with translations. I will include them as soon as possible.
@@ -310,4 +303,4 @@ AT_INTERACTIVE_EXIT ~VIEW ShuriNin/Shurinin.txt~
 ##### Version 1 &nbsp;(February 10, 2004)
 
 - Initial release.
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+<div align="right"><a href="#top">Back to top</a></div>
