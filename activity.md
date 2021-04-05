@@ -1,4 +1,4 @@
-<div align="center"><h1>Shuri Ninja - Thief kit</h1>
+<div align="center"><h1>Shuri Ninja - Thief Kit</h1>
 </div>
 
 

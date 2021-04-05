@@ -30,7 +30,7 @@ Baldur's Gate Trilogy, Tutu, BG:EE, SoD and EET<h3>
 
 ## 
 
-[Read the mod's readme](https://spellholdstudios.github.io/readmes/shurininja/documentation/shurininja-readme-english.html)
+[Read the mod's readme](https://spellholdstudios.github.io/readmes/shurininja/documentation/shurininja-readme-english.txt)
 
 ## 
 
@@ -78,7 +78,7 @@ If you encounter any bugs, please <a href="">report them on the forum!</a>
 
 #### Installation Order
 
->Although it is not required for the Shuri Ninja to function properly, ToB players are strongly recommended to download and install the latest version of the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
+>Although it is not required for the Shuri Ninja mod to function properly, ToB players are strongly recommended to download and install the latest version of the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
 
 Here is the recommended installation order:
 - Please install Shuri Ninja after ToBEx, BG2 Fixpack and EET.
@@ -164,44 +164,44 @@ The installer includes the following components. The number of each is the compo
 
 #### 10. Shuri Ninja Kit (legacy)
 
-Ce composant installe le profil de voleur original.
+This component installs the original thief kit.
 
 <details><summary>Kit description</summary>
 <p></br>
-Shuri Ninja are trained by the Shurikai, an organisation of ninja assassins that operate across Kara-Tur. They are quick, deadly, masters of stealth and highly skilled in the use of oriental blades, hand thrown weapons and archery. It is guaranteed if one is marked by the Shurikai they will die that night. Their lethal skills have earned them the respect and intense hatred of Samurai and other rival ninja clans. Very few warriors have crossed blade with a shuri ninja and lived to tell the tale.
+Shuri Ninjas are trained by the Shurikai, an organisation of ninja assassins that operate across Kara-Tur. They are quick, deadly, masters of stealth and highly skilled in the use of oriental blades, hand thrown weapons and archery. It is guaranteed if one is marked by the Shurikai they will die that night. Their lethal skills have earned them the respect and intense hatred of Samurai and other rival ninja clans. Very few warriors have crossed blade with a shuri ninja and lived to tell the tale.
 
-Many leave the Shurikai to follow their own paths at the cost of constantly watching their backs for the blades of former comrades. Their services are highly sought after by the western thief guilds if they make it to the western lands alive. None dare double cross them as entire guilds have met their deaths by a single shuri ninja. Due to the rarity of demi-humans in Kara-Tur only humans are trusted with the secrets of Shurikai Ninjutsu.
+Many leave the Shurikai to follow their own paths at the cost of constantly watching their backs for the blades of former comrades. Their services are highly sought after by the western thief guilds if they make it to the western lands alive. None dare double cross them as entire guilds have met their deaths by a single Shuri Ninja. Due to the rarity of demi-humans in Kara-Tur only humans are trusted with the secrets of Shurikai Ninjutsu.
 
 Advantages:
-- +20% bonus to Hide In Shadows and Move Silently.
+- +20% bonus to Hide in Shadows and Move Silently.
 - +2 bonus to Dexterity.
-- At high levels, gain the fighter's special abilities.
+- At high levels, gains the fighter's special abilities.
 - +1 bonus to hit and damage rolls every 4 levels, starting at 4th level.
 - +1 bonus to Armor Class every 5 levels, starting at 5th level.
 - May Specialize (two slots) in katana, scimitar, dagger, dart and short bow.
 - May achieve Specialization (two slots) in Single-Weapon Style and allocate three slots in Two-Weapon Style.
 
-- As Shuri Ninja increase in level they learn new deadly techniques to aid them in combat or assassination.
-  * 5th level (Blue Belt): Learns to detect illusions (may use the True sight ability twice per day).
-  * 10th level (Purple Belt): Learns to strike opponents at pressure points (may use the Stunning Blow ability twice per day). All successful attacks within the next round force the victim to save vs. Spell or be stunned.
-  * 15th level (Red Belt): Learns to maximise the damage they deal for a limited time (may use the Blinding Strike ability once per day, and gains an additional use every 10 levels thereafter). All successful attacks within the next 10 seconds deal maximum damage.
-  * 20th level (Brown Belt): Learns to use the monk's Quivering Palm ability once per day (The secret was stolen from an eastern monastery). The next successful attack forces the opponent to save vs. Spell or die. 
-  * 25th level (Black Belt): Learns to coat their weapons with poison (may use the Poison Weapon ability once a day).
-  * 30th level: Learns to strengthen their minds against all mental attacks (may use the Chaotic Commands ability once per day). Gains an additional +20% bonus to Hide In Shadows and Move Silently.
-  * 35th level (First Dan): Their skill in combat increases (+1 bonus THAC0). Gains an additional use of the Poison Weapon ability.
+As Shuri Ninjas increase in level, they learn new deadly techniques to aid them in combat or assassination:
+- 5th level (Blue Belt): Learns to detect illusions (may use the True sight ability twice per day).
+- 10th level (Purple Belt): Learns to strike opponents at pressure points (may use the Stunning Blow ability twice per day). All successful attacks within the next round force the victim to save vs. Spell or be stunned. spcl811
+- 15th level (Red Belt): Learns to maximise the damage they deal for a limited time (may use the Blinding Strike ability once per day, and gains an additional use every 10 levels thereafter). All successful attacks within the next 10 seconds deal maximum damage.
+- 20th level (Brown Belt): Learns to use the monk's Quivering Palm ability once per day (The secret was stolen from an eastern monastery). The next successful attack forces the opponent to save vs. Spell or die.  spcl820
+- 25th level (Black Belt): Learns to coat their weapons with poison (may use the Poison Weapon ability once a day).
+- 30th level: Learns to strengthen their minds against all mental attacks (may use the Chaotic Commands ability once per day). Gains an additional +20% bonus to Hide in Shadows and Move Silently.
+- 35th level (First Dan): Their skill in combat increases (+1 bonus to THAC0). Gains an additional use of the Poison Weapon ability.
 
 POISON WEAPON</br>
-Each successful hit within the next 5 rounds will inject poison into the target. Each target can only be affected once per round. The amount of poison damage depends on the character's level:</br>
-1st - Target suffers 1 poison damage per second for 6 seconds (Save vs. Death at +1 negates)</br>
-5th - Target suffers 1 poison damage per second for 12 seconds (Save vs. Death negates), and also immediately suffers 2 poison damage (no save)</br>
-9th - Target suffers 1 poison damage per second for 18 seconds (Save vs. Death at -1 negates), and also immediately suffers 4 poison damage (no save)</br>
-13th - Target suffers 1 poison damage per second for 24 seconds (Save vs. Death at -2 negates), and also immediately suffers 6 poison damage (no save)</br>
+Each successful hit within the next 5 rounds will inject poison into the target. Each target can only be affected once per round. The amount of poison damage depends on the character's level:
+- 1st: Target suffers 1 poison damage per second for 6 seconds (Save vs. Death at +1 negates)
+- 5th: Target suffers 1 poison damage per second for 12 seconds (Save vs. Death negates), and also immediately suffers 2 poison damage (no save)
+- 9th: Target suffers 1 poison damage per second for 18 seconds (Save vs. Death at -1 negates), and also immediately suffers 4 poison damage (no save)
+- 13th: Target suffers 1 poison damage per second for 24 seconds (Save vs. Death at -2 negates), and also immediately suffers 6 poison damage (no save)
 
 
 Disadvantages:
 - May not use the Set Snare ability
 - Incurs a -2 penalty to Strength, Constitution and Charisma.
-- May only use the following weapons: katana, scimitar, dagger, dart and bow.
+- May only use the following weapons: katana, scimitar, dagger, short bow and dart.
 - May not place any slots in Two-Handed Weapon Style and Sword and Shield Style.
 - May not dual class.
 - Alignment restricted to any chaotic.
@@ -217,7 +217,7 @@ The two next components don't need further explanation, I guess. &#128521;</br>
 
 ## 
 
-#### 30. Shuri Ninja Kit may not wear any armor (EE only)</br>
+#### 30. Shuri Ninja Kit may not wear any armor (EE only)
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -280,9 +280,9 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Replaced `AT_INTERACTIVE_EXIT` deprecated command with `README`.
 - Added `HANDLE_CHARSETS` function to convert string entries for EE games.
 - Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
-- Added components `DESIGNATED` numbers and "*ruad_soa*", "*ruad_soa*" and "*ruad_tob*" `LABELS.
+- Added components `DESIGNATED` numbers and "*gw_shuri_ninja_kit_original*", "*gw_shuri_ninja_kit_only_leather*" and "*gw_shuri_ninja_kit_no_armor*" `LABELS`.
 - Added "*always.tpa*" library.
-- Externalized tp2 code into *main_component.tpa* libraries for more comfortable readability and maintenance. :wink:.
+- Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance. :wink:.
 - Commented code as much as possible.
 - Added two sub-components (EE only): "*Shuri Ninja may not wear heavier armor than leather*" and "*Shuri Ninja may not wear any armor*".
 - Added native BG:EE and BG2EE compatibility (probably with EET, but not yet tested).

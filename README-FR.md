@@ -44,9 +44,9 @@ Baldur's Gate Trilogy, Tutu, BG:EE, SoD et EET</h3>
 
 ## <a name="intro" id="intro"></a>Présentation
 
-Ce module ajoute un nouveau profil de voleur dans le jeu : le Shuri Ninja.
+Ce module ajoute un nouveau profil de voleur dans le jeu : le shuri ninja.
 
-Créé il y a de nombreuses années par Twinblades2, il a été réécrit dans les standards modernes de code WeiDU et rendu compatible pour les jeux Enhanced par Aalkaor et Freddy_Gwendo.
+Créé il y a de nombreuses années par Twinblades2, il a été réécrit dans les standards modernes de code WeiDU et rendu compatible pour les jeux Enhanced par Aalkaor et Gwendolyne (aka Freddy_Gwendo).
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
 
@@ -59,7 +59,7 @@ Créé il y a de nombreuses années par Twinblades2, il a été réécrit dans les stan
 Ce mod est conçu pour fonctionner sur la plupart des jeux Infinity Engine, ce qui inclut :
 
 - La série des Éditions Améliorées (Enhanced Editions) publiées par Beamdog, Baldur's Gate: Enhanced Edition (BGEE), Baldur's Gate II: Enhanced Edition (BG2EE), ainsi que l'extension de BGEE, Siege of Dragonspear (SoD). Toutes les Éditions Améliorées comprennent leurs extensions originales.
-- Le jeu original Baldur's Gate II avec son extension Trône de Bhaal (Throne of Bhaal : ToB). **Assurez-vous que vous avez bien installé le patch 26498 pour le Trône de Bhaal.**Si nécessaire, vérifiez le fichier Readme relatif au patch dans votre répertoire de jeu et sur le site internet de <a href="http://www.bioware.com/games/throne_bhaal/support/patches/">BioWare</a>.
+- Le jeu original Baldur's Gate II avec son extension Trône de Bhaal (Throne of Bhaal : ToB). **Assurez-vous que vous avez bien installé le patch 26498 pour le Trône de Bhaal.** Si nécessaire, vérifiez le fichier Readme relatif au patch dans votre répertoire de jeu et sur le site internet de <a href="http://www.bioware.com/games/throne_bhaal/support/patches/">BioWare</a>.
 - Les mods de conversion basés sur ToB : <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a>, <a href="https://www.pocketplane.net/bg1tutu/">Baldur's Gate Tutu</a> (Tutu) et <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy</a> (EET).
 
 ## 
@@ -80,7 +80,7 @@ Si vous rencontrez des bugs, veuillez les signaler dans le <a href="">forum</a>,
 >Bien qu'il ne soit pas requis pour faire correctement tourner Shuri Ninja, nous recommandons fortement aux joueurs de ToB original de télécharger et d'installer la dernière version du <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> avant d'installer ce mod.</br>
 
 Voici l'ordre d'installation conseillé :
-- Veuillez installer Shuri Ninja après ToBEx, BG2 Fixpack et EET.</li>
+- Veuillez installer Shuri Ninja après ToBEx, BG2 Fixpack et EET.
 - Veuillez installer Shuri Ninja avant EET_end et les procédures finales de « biffing » [*NdT : archivage avec Generalized biffing*].
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
@@ -130,9 +130,9 @@ Pour réinstaller, désinstaller ou changer certains composants, lancez **`setup-s
 
 Shuri Ninja pour Mac OS X est livré et installé avec WeiDU, et est diffusé dans la même archive compressée.
 
-Extrayez le contenu de l'archive dans votre répertoire de jeu. Après une extraction réussie, ce dernier contiendra les fichiers setup-shurininja, setup-shurininja.command, et le répertoire :file_folder: shurininja. Pour installer, il suffit de double-cliquer sur **`setup-shurininja.command`** et de suivre les instructions affichées à l'écran.
+Extrayez le contenu de l'archive dans votre répertoire de jeu. Après une extraction réussie, ce dernier contiendra les fichiers setup-shurininja, setup-shurininja.command, et le répertoire :file_folder: shurininja. Pour installer le mod, il suffit de double-cliquer sur **`setup-shurininja.command`** et de suivre les instructions affichées à l'écran.
 
-Vous pouvez lancer **`setup-shurininja.command`** dans votre répertoire de jeu pour réinstaller, désinstaller ou changer des composants.
+Pour réinstaller, désinstaller ou changer certains composants, lancez **`setup-shurininja.command`** dans votre répertoire de jeu.
 
 ## 
 
@@ -161,9 +161,9 @@ En plus des méthodes détaillées plus haut pour supprimer des composants, il est 
 
 Le programme d'installation comprend les composants suivants. Chacun possède un numéro distinct et pré-défini qui lui attribue une position déterminée (*NdT : mot-clé `DESIGNATED` en langage WeiDU*] ; ce qui permet aux autres composants de le détecter et aux utilitaires d'installation automatiques de préciser quels composants installer.
 
-#### 10. Profil de Shuri Ninja original
+#### 10. Profil de shuri ninja original
 
-This component installs the original thief kit.
+Ce composant installe le profil de voleur original.
 
 <details><summary>Kit description</summary>
 <p></br>
@@ -180,27 +180,27 @@ Avantages :
 - Peut se spécialiser (deux étoiles) dans le maniement du katana, du cimeterre, des dagues, des fléchettes et de l'arc court.
 - Peut se spécialiser (deux étoiles) dans le style de combat d'arme à une main et allouer trois étoiles dans le style de combat à deux armes.
 
-À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin.
-  * Au niveau 5 (ceinture bleue), il gagne la capacité Vision véritable deux fois par jour pour détecter les illusions.
-  * Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée
-  * Au niveau 15 (ceinture rouge), il peut utiliser la capacité Frappe éclair une fois par jour, tous les 10 niveaux d'expérience. Pendant 10 secondes, toutes ses attaques infligent le maximum de dégâts.
-  * Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
-  * Au niveau 25 (ceinture noire), il peut enduire son arme de poison une fois par jour (capacité Arme empoisonnée).
-  * Au niveau 30, il peut protéger son esprit de toute attaque mentale une fois par jour (capacité Ordres chaotiques) et il gagne 20 % supplémentaires en Furtivité.
-  * Au niveau 35 (premier dan), il est encore plus fort au combat (bonus de 1 au TAC0) et gagne une utilisation supplémentaire de la capacité Arme empoisonnée.
+À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin :
+- Au niveau 5 (ceinture bleue), il gagne la capacité Vision véritable deux fois par jour pour détecter les illusions.
+- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée.
+- Au niveau 15 (ceinture rouge), il peut utiliser la capacité Frappe éclair une fois par jour, tous les 10 niveaux d'expérience. Pendant 10 secondes, toutes ses attaques infligent le maximum de dégâts.
+- Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère oriental. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
+- Au niveau 25 (ceinture noire), il peut enduire son arme de poison une fois par jour (capacité Arme empoisonnée).
+- Au niveau 30, il peut protéger son esprit de toute attaque mentale une fois par jour (capacité Ordres chaotiques) et il gagne 20 % supplémentaires en Furtivité.
+- Au niveau 35 (premier dan), il est encore plus fort au combat (bonus de 1 au TAC0) et gagne une utilisation supplémentaire de la capacité Arme empoisonnée.
 
 ARME EMPOISONNÉE :</br>
-Chaque coup réussi au cours du prochain round empoisonnera la cible. Chaque cible ne peut être affectée qu'une fois par round. Le montant des dégâts de poison dépend du niveau du personnage :</br>
-1er : la cible subit 1 point de dégât de poison par seconde pendant 6 secondes (annulé par une sauvegarde contre la mort à +1)</br>
-5ème : la cible subit 1 point de dégât de poison par seconde pendant 12 secondes (annulé par une sauvegarde contre la mort) et subit immédiatement 2 points de dégâts de poison (sans sauvegarde)</br>
-9ème : la cible subit 1 point de dégât de poison par seconde pendant 18 secondes (annulé par une sauvegarde contre la mort à -1) et subit immédiatement 4 points de dégâts de poison (sans sauvegarde)</br>
-13ème : la cible subit 1 point de dégât de poison par seconde pendant 24 secondes (annulé par une sauvegarde contre la mort à -2) et subit immédiatement 6 points de dégâts de poison (sans sauvegarde)</br>
+Chaque coup réussi au cours du prochain round empoisonnera la cible. Chaque cible ne peut être affectée qu'une fois par round. Le montant des dégâts de poison dépend du niveau du personnage :
+- 1er : la cible subit 1 point de dégât de poison par seconde pendant 6 secondes (annulé par une sauvegarde contre la mort à +1)
+- 5ème : la cible subit 1 point de dégât de poison par seconde pendant 12 secondes (annulé par une sauvegarde contre la mort) et subit immédiatement 2 points de dégâts de poison (sans sauvegarde)
+- 9ème : la cible subit 1 point de dégât de poison par seconde pendant 18 secondes (annulé par une sauvegarde contre la mort à -1) et subit immédiatement 4 points de dégâts de poison (sans sauvegarde)
+- 13ème : la cible subit 1 point de dégât de poison par seconde pendant 24 secondes (annulé par une sauvegarde contre la mort à -2) et subit immédiatement 6 points de dégâts de poison (sans sauvegarde)
 
 
 Désavantages :
 - Ne peut pas poser de pièges.
-- Pénalité de 2 points à la Force, à la Constitution et au Charisme.
-- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, fléchette et arc court.
+- Pénalité de 2 points à la Force, à la Constitution et au Charisme à la création du personnage.
+- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, arc court et fléchette.
 - Ne peut pas être compétent dans les styles de combat armes à deux mains et épée et bouclier.
 - Ne peut pas se jumeler.
 - Doit être d'alignement chaotique.
@@ -272,18 +272,30 @@ Note du traducteur : l'historique n'est volontairement pas traduit afin de facil
 
 ##### Version 2.0.0 - nn septembre 2019
 
-- tp2 split into components and commented for easier further updates.
-- Reorganized components (DESIGNATED numbers).
-- Added two sub-components (EE only): "Shuri Ninja may not wear heavier armor than leather" and "Shuri Ninja may not wear any armor".
-- Added BG2EE, BGEE and SoD compatibility (probably with EET, but not yet tested).
+- Added *shurininja.ini* metadata file to support AL|EN's "Project Infinity".
+- Renamed *Setup-Shurinin.tp2* -> *shurininja.tp2* to support AL|EN's "Project Infinity".
+- Replaced `AUTHOR` keyword with `SUPPORT`.
+- Added `VERSION` flag.
+- Replaced `AT_INTERACTIVE_EXIT` deprecated command with `README`.
+- Added `HANDLE_CHARSETS` function to convert string entries for EE games.
+- Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
+- Added components `DESIGNATED` numbers and "*gw_shuri_ninja_kit_original*", "*gw_shuri_ninja_kit_only_leather*" and "*gw_shuri_ninja_kit_no_armor*" `LABELS`.
+- Added "*always.tpa*" library.
+- Externalized tp2 code into *main_component.tpa* libraries for more comfortable readability and maintenance. :wink:.
+- Commented code as much as possible.
+- Added two sub-components (EE only): "*Shuri Ninja may not wear heavier armor than leather*" and "*Shuri Ninja may not wear any armor*".
+- Added native BG:EE and BG2EE compatibility (probably with EET, but not yet tested).
 - No longer overwrites system files.
-- Used HANDLE_CHARSETS function to add EE compatibility for languages other than English.
-- Deleted unused files from mod folder.
-- Updated readme (Shri-Ninja now supports translated readmes).
+- Updated and renamed readme file to "*shurininja-readme-%LANGUAGE%.txt*" (Shuri Ninja now supports translated readmes).
+- Proofread English texts (Gwendolyne).
 - Added French translation, including readme (Aalkaor and Gwendolyne).
-- Traification.
-- Added shurininja.ini metadata file to support AL|EN's "Project Infinity".
-- Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer to v246.
+- Traification. Feel free to provide me with translations. I will include them as soon as possible.
+- Removed unused files and "*backup*" folder.
+- Reorganized mod architecture tree: created or renamed folders to sort files according to their types.
+- Lower cased files. 
+- Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
+- Added archive libiconv-1.9.2-1-src.7z with iconv licence info.
+- Updated WeiDU installer to v247.
 
 ## 
 
