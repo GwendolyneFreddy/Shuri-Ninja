@@ -6,7 +6,7 @@
 <a href="README-FR.md"><img align="right" src="shurininja/readme/images/fr-flag-32.png" title="Readme français"></a>
 
 
-<div align="center"><h1>Shuri Ninja - Thief kit (WIP)</h1>
+<div align="center"><h1>Shuri Ninja - Thief kit</h1>
 
 <h3>A mod for Baldur's Gate II:ToB (original and EE games),<br>
 Baldur's Gate Trilogy, Tutu, BG:EE, SoD and EET<h3>
@@ -15,12 +15,9 @@ Baldur's Gate Trilogy, Tutu, BG:EE, SoD and EET<h3>
 
 
 **Original Author:** Twinblades2  
-**Mod Website:** <a href=""></a>  
-**Mod forum:** <a href=""></a>  
+**Mod forum:** <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/33164-kit-le-mod-shuri-ninja-est-disponible-pour-les-jeux-ee.html"></a>  
 
 ## 
-
-:warning: Readme writing in progress... Don't try to download and install this mod as it is a WIP version and its install will fail, because of missing files still in development or in beta testing
 
 [![Created Badge](https://badges.pufler.dev/created/GwendolyneFreddy/Shuri-Ninja?style=plastic)](https://badges.pufler.dev)
 ![GitHub repo size](https://img.shields.io/github/repo-size/GwendolyneFreddy/Shuri-Ninja?style=plastic)
@@ -30,8 +27,7 @@ Baldur's Gate Trilogy, Tutu, BG:EE, SoD and EET<h3>
 
 ## 
 
-[Read the mod's readme](https://spellholdstudios.github.io/readmes/shurininja/documentation/shurininja-readme-english.txt)
-
+[Read the mod's readme](https://gwendolynefreddy.github.io/docs/lcc/shurininja-readme-english.txt)
 ## 
 
 <div align="center">
@@ -70,9 +66,8 @@ This mod is designed to work on most Infinity Engine games. This includes:
 This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. However, we cannot test every single one. Though we are striving to make it compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
 
 - <a href="">Kit Revisions</a>
-- ...
 
-If you encounter any bugs, please <a href="">report them on the forum!</a>
+If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/33164-kit-le-mod-shuri-ninja-est-disponible-pour-les-jeux-ee.html">report them on the forum!</a>
 
 ## 
 
@@ -162,11 +157,13 @@ The installer includes the following components. The number of each is the compo
 
 ## 
 
-#### 10. Shuri Ninja Kit (legacy)
+#### [10] Shuri Ninja Kit (legacy)
 
 This component installs the original thief kit.
 
-<details><summary>Kit description</summary>
+&#9755; :warning: Due to IE limitations, it is not possible to restrict weapons the Shuri Ninja can equip to katana, scimitar, dagger, short bow and dart, without breaking other mods compatibility. **This feature is only available in EE games.**
+
+<details><summary><ins>Kit description</ins></summary>
 <p></br>
 Shuri Ninjas are trained by the Shurikai, an organisation of ninja assassins that operate across Kara-Tur. They are quick, deadly, masters of stealth and highly skilled in the use of oriental blades, hand thrown weapons and archery. It is guaranteed if one is marked by the Shurikai they will die that night. Their lethal skills have earned them the respect and intense hatred of Samurai and other rival ninja clans. Very few warriors have crossed blade with a shuri ninja and lived to tell the tale.
 
@@ -199,9 +196,10 @@ Each successful hit within the next 5 rounds will inject poison into the target.
 
 
 Disadvantages:
-- May not use the Set Snare ability
+- May not use the Set Snare ability.
 - Incurs a -2 penalty to Strength, Constitution and Charisma.
-- May only use the following weapons: katana, scimitar, dagger, short bow and dart.
+- May only use the following weapons: katana, scimitar, dagger, short bow and dart. (**EE games**)
+- May only use the following weapons: long sword, short sword, katana, scimitar, dagger, club, quarterstaff, crossbow, short bow, dart and sling. (**classic games**)
 - May not place any slots in Two-Handed Weapon Style and Sword and Shield Style.
 - May not dual class.
 - Alignment restricted to any chaotic.
@@ -213,11 +211,11 @@ Disadvantages:
 
 The two next components don't need further explanation, I guess. &#128521;</br>
 
-#### 20. Shuri Ninja Kit may not wear heavier armor than leather (EE only)
+#### [20] Shuri Ninja Kit may not wear heavier armor than leather (EE only)
 
 ## 
 
-#### 30. Shuri Ninja Kit may not wear any armor (EE only)
+#### [30] Shuri Ninja Kit may not wear any armor (EE only)
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -226,12 +224,12 @@ The two next components don't need further explanation, I guess. &#128521;</br>
 
 ## <a name="credits" id="credits"></a>Credits and Acknowledgements
 
-&#9755; For support or questions, please visit the <a href="">mod forum</a>.
+&#9755; For support or questions, please visit the <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/33166-shuri-ninja-kit-rapport-de-bugs-bug-reports.html">mod forum</a>.
 
 ## 
 
 **Author:** Twinblades2 (at twblds@hotmail.com)  
-**Support:** <a href="http://www.shsforums.net/user/24495-gwendolyne/">Gwendolyne</a>
+**Support:** <a href="https://www.baldursgateworld.fr/lacouronne/members/freddy_gwendo.html">Gwendolyne</a>
 
 ## 
 
@@ -239,8 +237,6 @@ The two next components don't need further explanation, I guess. &#128521;</br>
 
 - <a href="https://www.baldursgateworld.fr/lacouronne/members/aalkaor.html">Aalkaor</a> for having dug up this old mod, translated it into French and begun its WeiDU coding.
 - <a href="https://www.baldursgateworld.fr/lacouronne/members/freddy_gwendo.html">Gwendolyne</a> for having completed the WeiDU coding, made it EE compatible, and proofread the translation.
-
-If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="next to come">mod forum</a>.
 
 ## 
 
@@ -271,7 +267,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ## <a name="versions" id="versions"></a>Versions History
 
-##### Version 2.0.0 &nbsp;(April 4, 2021)
+##### Version 2.0.0 &nbsp;(April 6, 2021)
 
 - Added *shurininja.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *Setup-Shurinin.tp2* -> *shurininja.tp2* to support AL|EN's "Project Infinity".
@@ -285,8 +281,17 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance. :wink:.
 - Commented code as much as possible.
 - Added two sub-components (EE only): "*Shuri Ninja may not wear heavier armor than leather*" and "*Shuri Ninja may not wear any armor*".
-- Added native BG:EE and BG2EE compatibility (probably with EET, but not yet tested).
-- No longer overwrites system files.
+- Added native BG:EE and BG2EE compatibility (probably with EET, but not yet tested):
+  - Added armor restrictions (new sub-components).
+  - Added weapons restriction: from now on, Shuri Ninja can't equip long sword, short sword, quarterstaff, club, crossbow and sling, as per description. Unfortunately, IE limitations does not allow to code it for classic games, without breaking other mods compatibility.
+  - Shuri Ninha can't wear any shield.
+  - Added specific Stunning Blow and Quivering Palm abilities: applied op#248 to any weapon wielded (EE games: parameter2 is set to 4 - fists only).
+- BGT and tutu: Added katanas, Ninjatos and Wakizashis to the games, so that she Shuri Ninja kit should be friendly playable.
+- Removed one extra Blinding strike at 40th level.
+- Fixed innate Chaotic Commands ability: duration reduced to 1 turn and included a few <a href="https://www.gibberlings3.net/forums/topic/29670-is-this-possible-to-add-in-bg2-fixpack/?tab=comments#comment-263138">fixes</a>.
+- Fixed wrong proficiencies pips.
+- No longer overwrites system files (cloned and patched existing SPL files to improve compatibility).
+- Handled special classic game engine restriction: kit descriptions can't exceed 4815 characters, or the game crashes at chargen!.
 - Updated and renamed readme file to "*shurininja-readme-%LANGUAGE%.txt*" (Shuri Ninja now supports translated readmes).
 - Proofread English texts (Gwendolyne).
 - Added French translation, including readme (Aalkaor and Gwendolyne).

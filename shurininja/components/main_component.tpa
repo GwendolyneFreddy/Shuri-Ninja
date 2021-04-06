@@ -3,13 +3,12 @@
  *                                                               M A I N    C O M P O N E N T                                                                *
  *                                                                                                                                                           *
  * ========================================================================================================================================================= *
- *  This component installs the Shuri Ninja kit, regardless of its sub-type..                                                                                *
+ *  This component installs the Shuri Ninja kit, regardless of its sub-type.                                                                                 *
  * ========================================================================================================================================================= *
  *  change-log:                                                                                                                                              *
  *  -----------                                                                                                                                              *
  *      - EE compatibility: used fl#add_kit_ee function.                                                                                                     *
  *      - Variable %GW_shuri_kit% = 1 (installs original kit) - 2 (installs may not wear heavier armor than leather) - 3 (installs may not wear any armor).  *
- *        code page was detected (#50).                                                                                                                      *
  *      - Handling special classic game engine restriction: kit descriptions can't exceed 4815 characters, or the game crashes at chargen!                   *
  *        So we need 2 description strref: @nnn for EE games and @1nnn for classic games. Fortunately, this is useless for English language.                 *
  *        Variable %GW_shuri_desc% = @strref + %tob_string%                                                                                                  *
@@ -181,8 +180,9 @@ COPY_EXISTING ~SPPR508.SPL~		~override/gwshur2.spl~
 	FOR (level = 2 ; level <= 50 ; ++level) BEGIN
 		LPF DELETE_SPELL_HEADER INT_VAR min_level = level header_type = 1 END
 	END
-	LPF ALTER_SPELL_HEADER INT_VAR location = 4 target = 5 projectile = (IDS_OF_SYMBOL (projectl SPARKLBL) + 1) END                        // if BG2 Fixpack does not provide this fix
-	LPF DELETE_EFFECT INT_VAR check_globals = 0 header = 0 header_type = 1 multi_match = 1 match_opcode = 267 match_parameter1 = 16233 END // if BG2 Fixpack does not provide this fix
+	LPF ALTER_SPELL_HEADER INT_VAR location = 4 target = 5 projectile = (IDS_OF_SYMBOL (projectl SPARKLBL) + 1) END                        // if BG2 Fixpack does not provide this fix (the last vanilla extender header projectile is SPARKGO instead of SPARKLBL)
+    LPF CLONE_EFFECT INT_VAR silent = 1 check_globals = 0 match_opcode = 206 STR_VAR match_resource = ~spwi813~ resource = ~spin774~ END   // clone arcane maze to psionic maze protection (already in BG2 Fixpack)
+	LPF DELETE_EFFECT INT_VAR check_globals = 0 header = 0 header_type = 1 multi_match = 1 match_opcode = 267 match_parameter1 = 16233 END // if BG2 Fixpack does not provide this fix - the first vanilla extended header contains one weird opcode #267 with parameter1 16233 (*gulp*)
 	LPF ALTER_EFFECT INT_VAR silent = 1 check_globals = 0 resist_dispel = 0 END                                                            // innate ability : not dispellable.
 	LPF ALTER_SPELL_EFFECT INT_VAR duration_high = 60 END                                                                                  // sets duration to 60 seconds
 BUT_ONLY
@@ -191,11 +191,11 @@ BUT_ONLY
 // --------
 COPY ~%MOD_FOLDER%/spells/gwshur3.spl~	~override~
 
-// Stunning Blow - Quivering Palm
-// ------------------------------
+// Specific innate Stunning Blow and Quivering Palm abilities
+// ----------------------------------------------------------
 COPY_EXISTING ~SPCL811.SPL~ ~override/gwsh811.spl~
               ~SPCL820.SPL~ ~override/gwsh820.spl~ 
-	LPF ALTER_EFFECT INT_VAR silent = 1 check_globals = 0 match_opcode = 248 parameter2 = 0  END // apply op#248 to any weapon wield. (EE games: parameter2 is set to 4: fists only)
+	LPF ALTER_EFFECT INT_VAR silent = 1 check_globals = 0 match_opcode = 248 parameter2 = 0  END // apply op#248 to any weapon wielded. (EE games: parameter2 is set to 4 - fists only)
 
 
 /* =========================================================================== *
@@ -222,7 +222,7 @@ ACTION_IF (is_ee) BEGIN
 				READ_ASCII 0x22 animation (2)
 				READ_BYTE  0x31 proficiency
 
-				// 1. Proficiencies = 90 longsword - 91 shortsword - 102 quaterstaff - 103 crossbow - 107 sling - 115 club // 104 longbow - 
+				// 1. Proficiencies = 90 longsword - 91 shortsword - 102 quarterstaff - 103 crossbow - 107 sling - 115 club
 				PATCH_MATCH proficiency WITH
 					90 91 102 103 107 115 BEGIN
 						SET GW_weapon_unusable = 1
@@ -262,5 +262,75 @@ ACTION_IF (is_ee) BEGIN
 
 		END		// of PATCH_IF (SOURCE_SIZE > 0x71)
 	BUT_ONLY
+
+END
+
+
+/* ============================================================== *
+ *       Adds katanas, Ninjatos and Wakizashis to the games       *
+ * -------------------------------------------------------------- *
+ * Otherwise the Shuri Ninja Kit is unplayable in classic games.  *
+ * ============================================================== */
+
+SILENT
+
+// Adds 1 Katana, Ninjato and Wakizashi
+ACTION_FOR_EACH store IN ~erdane~  // Erdane (AR0500 Durlag's Tower, exterior)
+                         ~ulgoth~  // Bartender (AR1001 Ulgoth's Beard Store and Inn - Hurgan Stoneblade)
+BEGIN
+
+	COPY_EXISTING ~%tutu_var%%store%.sto~ ~override~
+
+		PATCH_IF (BUFFER_LENGTH >= 0x9c) BEGIN
+			PATCH_FOR_EACH sword IN ~SW1H43~ ~SW1H48~ ~SW1H46~ BEGIN
+				ADD_STORE_ITEM "%sword%" AFTER ~%tutu_var%SW1H20~ #0 #0 #0 ~IDENTIFIED~ #1
+			END
+		END
+
+	BUT_ONLY IF_EXISTS
+
+END
+
+ACTION_IF (is_classic) BEGIN
+
+	// Adds 1 Katana, Ninjato and Wakizashi in Candlekeep Inn
+	COPY_EXISTING ~%tutu_var%inn2616.sto~ ~override~
+
+		PATCH_IF (BUFFER_LENGTH >= 0x9c) BEGIN
+			PATCH_FOR_EACH sword IN ~SW1H43~ ~SW1H48~ ~SW1H46~ BEGIN
+				ADD_STORE_ITEM "%sword%" AFTER ~%tutu_var%SW1H20~ #0 #0 #0 ~IDENTIFIED~ #1
+			END
+		END
+
+	BUT_ONLY IF_EXISTS
+
+	// Adds 1 Katana and Wakizashi in General Store (AR1112 Generic weapons store)
+	COPY_EXISTING ~%tutu_var%sto1112.sto~ ~override~
+
+		PATCH_IF (BUFFER_LENGTH >= 0x9c) BEGIN
+			PATCH_FOR_EACH sword IN ~SW1H46~ ~SW1H43~ BEGIN
+				ADD_STORE_ITEM "%sword%" BEFORE ~%tutu_var%SW2H01~ #0 #0 #0 ~IDENTIFIED~ #1
+			END
+		END
+
+	BUT_ONLY IF_EXISTS
+
+	// Adds 1 Ninjato in Nashkel Store (Storekeep in AR4803)
+	COPY_EXISTING ~%tutu_var%sto4803.sto~ ~override~
+
+		PATCH_IF (BUFFER_LENGTH >= 0x9c) BEGIN
+			ADD_STORE_ITEM "SW1H48" BEFORE ~%tutu_var%SW2H01~ #0 #0 #0 ~IDENTIFIED~ #1
+		END
+
+	BUT_ONLY IF_EXISTS
+
+	// Adds 1 Ninjato +1 in container 3 (#2) (AR0226 : BG Sewers, eastern area - ogre mage for Scar)
+	COPY_EXISTING ~%ESewers%.are~ ~override~
+
+		PATCH_IF (BUFFER_LENGTH >= 0x11b) BEGIN
+ 			LPF ADD_AREA_ITEM INT_VAR container_to_add_to = 3 STR_VAR item_to_add = SW1H49 END
+		END
+
+	BUT_ONLY IF_EXISTS
 
 END

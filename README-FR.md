@@ -2,10 +2,10 @@
 ![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/Shuri-Ninja?include_prereleases&color=gold)<a name="top" id="top"></a>
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/GwendolyneFreddy/Shuri-Ninja?color=gold)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French&color=limegreen)
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20Fran%C3%A7ais&color=limegreen)
 <a href="README-FR.md"><img align="right" src="shurininja/readme/images/uk-flag-32.png" title="English Readme"></a>
 
-<div align="center"><h1>Shuri Ninja - Profil de voleur (WIP)</h1>
+<div align="center"><h1>Shuri Ninja - Profil de voleur</h1>
 
 <h3>Un mod pour les jeux Baldur's Gate II:ToB (original et EE),<br>
 Baldur's Gate Trilogy, Tutu, BG:EE, SoD et EET</h3>
@@ -15,12 +15,9 @@ Baldur's Gate Trilogy, Tutu, BG:EE, SoD et EET</h3>
 
 
 **Auteur original :** Twinblades2  
-**Site internet du mod :** <a href=""></a>  
-**Forum du mod :** <a href=""></a>  
+**Forum du mod :** <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/33164-kit-le-mod-shuri-ninja-est-disponible-pour-les-jeux-ee.html"></a>  
 
 ## 
-
-:warning: Readme writing in progress... Don't try to download and install this mod as it is a WIP version and its install will fail, because of missing files still in development or in beta testing
 
 [![Created Badge](https://badges.pufler.dev/created/GwendolyneFreddy/Shuri-Ninja?style=plastic)](https://badges.pufler.dev)
 ![GitHub repo size](https://img.shields.io/github/repo-size/GwendolyneFreddy/Shuri-Ninja?style=plastic)
@@ -30,7 +27,7 @@ Baldur's Gate Trilogy, Tutu, BG:EE, SoD et EET</h3>
 
 ## 
 
-[Lisez-moi du mod](https://spellholdstudios.github.io/readmes/infinityanimations/documentation/infinityanimations-readme-english.html)
+[Lisez-moi du mod](https://gwendolynefreddy.github.io/docs/lcc/shurininja-readme-french.txt)
 
 ## 
 
@@ -69,9 +66,8 @@ Ce mod est conçu pour fonctionner sur la plupart des jeux Infinity Engine, ce qu
 Shuri Ninja est un mod WeiDU et devrait par conséquent être compatible avec n'importe quel mod WeiDU. Bien que nous nous efforcions de le rendre compatible avec le plus grand nombre possible de mods, des incompatibilités risquent toujours de se produire. Voici la liste de celles recensées jusqu'à présent :
 
 - <a href="">Kit Revisions</a>
-- ...
 
-Si vous rencontrez des bugs, veuillez les signaler dans le <a href="">forum</a>, s'il vous plaît.
+Si vous rencontrez des bugs, veuillez les signaler dans le <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/33164-kit-le-mod-shuri-ninja-est-disponible-pour-les-jeux-ee.html">forum</a>, s'il vous plaît.
 
 ## 
 
@@ -161,11 +157,13 @@ En plus des méthodes détaillées plus haut pour supprimer des composants, il est 
 
 Le programme d'installation comprend les composants suivants. Chacun possède un numéro distinct et pré-défini qui lui attribue une position déterminée (*NdT : mot-clé `DESIGNATED` en langage WeiDU*] ; ce qui permet aux autres composants de le détecter et aux utilitaires d'installation automatiques de préciser quels composants installer.
 
-#### 10. Profil de shuri ninja original
+#### [10] Profil de shuri ninja original
 
 Ce composant installe le profil de voleur original.
 
-<details><summary>Kit description</summary>
+&#9755; :warning: À cause des limitations du moteur IE, il n'est malheureusement pas possible de restreindre les armes que peut utiliser le shuri ninja au katana, au cimeterre, à la dague, ç l'arc court et aux fléchettes, sans impacter d'autres kits et pauser des problèmes de compatibilité avec d'autres mods. **Cette restriction ne s'applique donc qu'aux jeux EE.**
+
+<details><summary><ins>Kit description</ins></summary>
 <p></br>
 Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe pas la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des samouraïs et des autres clans rivaux de ninjas. Rares sont en effet les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
 
@@ -200,7 +198,8 @@ Chaque coup réussi au cours du prochain round empoisonnera la cible. Chaque cibl
 Désavantages :
 - Ne peut pas poser de pièges.
 - Pénalité de 2 points à la Force, à la Constitution et au Charisme à la création du personnage.
-- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, arc court et fléchette.
+- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, arc court et fléchette. (**jeux EE**)
+- Ne peut utiliser que les armes suivantes : épée longue, épée courte, katana, cimeterre, dague, gourdin, bâton arbalète, arc court, fléchette et fronde. (**jeux classiques**)
 - Ne peut pas être compétent dans les styles de combat armes à deux mains et épée et bouclier.
 - Ne peut pas se jumeler.
 - Doit être d'alignement chaotique.
@@ -212,11 +211,11 @@ Désavantages :
 
 Je pense que les deux composants suivants ne nécessitent pas de description... &#128521;
 
-#### 20. Profil de Shuri Ninja limité aux armures de cuir (seulement pour EE)
+#### [20] Profil de Shuri Ninja limité aux armures de cuir (seulement pour EE)
 
 ## 
 
-#### 30. Profil de Shuri Ninja sans armure (seulement pour EE)</br>
+#### [30] Profil de Shuri Ninja sans armure (seulement pour EE)</br>
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
 
@@ -225,12 +224,12 @@ Je pense que les deux composants suivants ne nécessitent pas de description... &
 
 ## <a name="credits" id="credits"></a>Crédits et remerciements
 
-&#9755; Pour toute question ou demande d'assistance, veuillez consulter le <a href="">forum du mod</a>.
+&#9755; Pour toute question ou demande d'assistance, veuillez consulter le <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/33166-shuri-ninja-kit-rapport-de-bugs-bug-reports.html">forum du mod</a>.
 
 ## 
 
 **Auteur:** Twinblades2 (at twblds@hotmail.com)  
-**Maintenance :** <a href="http://www.shsforums.net/user/24495-gwendolyne/">Gwendolyne</a>
+**Maintenance :** <a href="https://www.baldursgateworld.fr/lacouronne/members/freddy_gwendo.html">Gwendolyne</a>
 
 ## 
 
@@ -270,7 +269,7 @@ Je pense que les deux composants suivants ne nécessitent pas de description... &
 
 Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour continue du mod.
 
-##### Version 2.0.0 - nn septembre 2019
+##### Version 2.0.0 &nbsp;(April 6, 2021)
 
 - Added *shurininja.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *Setup-Shurinin.tp2* -> *shurininja.tp2* to support AL|EN's "Project Infinity".
@@ -281,11 +280,20 @@ Note du traducteur : l'historique n'est volontairement pas traduit afin de facil
 - Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
 - Added components `DESIGNATED` numbers and "*gw_shuri_ninja_kit_original*", "*gw_shuri_ninja_kit_only_leather*" and "*gw_shuri_ninja_kit_no_armor*" `LABELS`.
 - Added "*always.tpa*" library.
-- Externalized tp2 code into *main_component.tpa* libraries for more comfortable readability and maintenance. :wink:.
+- Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance. :wink:.
 - Commented code as much as possible.
 - Added two sub-components (EE only): "*Shuri Ninja may not wear heavier armor than leather*" and "*Shuri Ninja may not wear any armor*".
-- Added native BG:EE and BG2EE compatibility (probably with EET, but not yet tested).
-- No longer overwrites system files.
+- Added native BG:EE and BG2EE compatibility (probably with EET, but not yet tested):
+  - Added armor restrictions (new sub-components).
+  - Added weapons restriction: from now on, Shuri Ninja can't equip long sword, short sword, quarterstaff, club, crossbow and sling, as per description. Unfortunately, IE limitations does not allow to code it for classic games, without breaking other mods compatibility.
+  - Shuri Ninha can't wear any shield.
+  - Added specific Stunning Blow and Quivering Palm abilities: applied op#248 to any weapon wielded (EE games: parameter2 is set to 4 - fists only).
+- BGT and tutu: Added katanas, Ninjatos and Wakizashis to the games, so that she Shuri Ninja kit should be friendly playable.
+- Removed one extra Blinding strike at 40th level.
+- Fixed innate Chaotic Commands ability: duration reduced to 1 turn and included a few <a href="https://www.gibberlings3.net/forums/topic/29670-is-this-possible-to-add-in-bg2-fixpack/?tab=comments#comment-263138">fixes</a>.
+- Fixed wrong proficiencies pips.
+- No longer overwrites system files (cloned and patched existing SPL files to improve compatibility).
+- Handled special classic game engine restriction: kit descriptions can't exceed 4815 characters, or the game crashes at chargen!.
 - Updated and renamed readme file to "*shurininja-readme-%LANGUAGE%.txt*" (Shuri Ninja now supports translated readmes).
 - Proofread English texts (Gwendolyne).
 - Added French translation, including readme (Aalkaor and Gwendolyne).
