@@ -15,7 +15,7 @@ Baldur's Gate Trilogy, Tutu, BG:EE, SoD et EET</h3>
 
 
 **Auteur original :** Twinblades2  
-**Forum du mod :** <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/33164-kit-le-mod-shuri-ninja-est-disponible-pour-les-jeux-ee.html"></a>  
+**Forum du mod :** <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/33164-kit-le-mod-shuri-ninja-est-disponible-pour-les-jeux-ee.html">Shuri Ninja Kit</a>  
 
 ## 
 
