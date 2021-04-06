@@ -284,7 +284,7 @@ The two next components don't need further explanation, I guess. &#128521;</br>
 - Added native BG:EE and BG2EE compatibility (probably with EET, but not yet tested):
   - Added armor restrictions (new sub-components).
   - Added weapons restriction: from now on, Shuri Ninja can't equip long sword, short sword, quarterstaff, club, crossbow and sling, as per description. Unfortunately, IE limitations does not allow to code it for classic games, without breaking other mods compatibility.
-  - Shuri Ninha can't wear any shield.
+  - Shuri Ninja can't wear any shield.
   - Added specific Stunning Blow and Quivering Palm abilities: applied op#248 to any weapon wielded (EE games: parameter2 is set to 4 - fists only).
 - BGT, tutu and IWD:EE: Added katanas, Ninjatos and Wakizashis to the games, so that she Shuri Ninja kit should be friendly playable.
 - Removed one extra Blinding strike at 40th level.
