@@ -3,7 +3,24 @@
 @20  = ~Shuri Ninja Kit may not wear heavier armor than leather (EE only)~
 @30  = ~Shuri Ninja Kit may not wear any armor (EE only)~
 
-@11  = ~This mod requires ToB, BGT, BG:EE, BG2:EE or EET to be installed.~
-@12  = ~This mod is not compatible with Kit Revisions.~
-@13 = ~Modmerge is required before mods can be installed on this game. Check the readme for more information and a link to download Modmerge.~
-@21  = ~This mod requires BG:EE, BG2:EE or EET to be installed.~
+@51  = ~This mod requires ToB, BGT, tutu, BG:EE, BG2:EE or EET to be installed.~
+@52  = ~This mod is not compatible with Kit Revisions.~
+@53  = ~This mod requires BG:EE, BG2:EE or EET to be installed.~
+@54  = ~This mod needs to be installed before EET_End on your EET install.~
+
+
+/* ------------ *
+ *  always.tpa  *
+ * ------------ */
+@1000 = ~Your SoD game needs to be mod-merged before mods can be installed on this game. Check the readme for more information and a link to download the DLC Merger or Modmerge.~
+
+@1001 = ~Tutu install detected.~
+@1002 = ~BG2:ToB install detected.~
+@1003 = ~BGT install detected.~
+@1004 = ~Baldur's Gate Enhanced Edition install detected.~
+@1005 = ~Siege of Dragonspear install detected.~
+@1006 = ~Baldur's Gate II Enhanced Edition install detected.~
+@1007 = ~Enhanced Edition Trilogy install detected.~
+@1008 = ~Icewind Dale Enhanced Edition install detected.~
+
+

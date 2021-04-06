@@ -1,8 +1,16 @@
 @101 = ~shuri ninja~
 @102 = ~Shuri Ninja~
 
-// Kit descriptions
-// ----------------
+/* ------------------ *
+ *  Kit descriptions  *
+ * ------------------ */
+
+// Handling special classic game engine restriction: kit descriptions can't exceed 4815 characters, or the game crashes at chargen! Fortunately, this is useless for English language).
+// Moreover, it is quite impossible to restrict shuri ninja using only katana, scimitar, dagger, dart and bow without breaking compatibility with other mods in classic games.
+// So we need 2 description strref: @nnn for EE games and @1nnn for classic games.
+
+// Original Shuri Ninja (sub-component #10)
+// ----------------------------------------
 @103 = ~SHURI NINJA : Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe pas la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des samouraïs et des autres clans rivaux de ninjas. Rares sont en effet les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
 
 Beaucoup s'affranchissent du Shurikai pour suivre leur propre voie, même s'il doivent constamment surveiller leurs arrières pour ne pas être victimes de la lame de leurs anciens compagnons d'armes. S'ils parviennent à rejoindre sans encombre les contrées occidentales, ils savent que les guildes de voleurs locales apprécient et recherchent ardemment leurs services. Des guildes entières ayant été décimées par un seul shuri ninja, personne n'ose les trahir. Le Kara-Tur comptant très peu de demi-humains, seuls les humains sont autorisés à bénéficier des enseignements secrets du Shurikai Ninjutsu.
@@ -16,34 +24,32 @@ Avantages :
 - Peut se spécialiser (deux étoiles) dans le maniement du katana, du cimeterre, des dagues, des fléchettes et de l'arc court.
 - Peut se spécialiser (deux étoiles) dans le style de combat d'arme à une main et allouer trois étoiles dans le style de combat à deux armes.
 
-À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin.
+À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin :
 - Au niveau 5 (ceinture bleue), il gagne la capacité Vision véritable deux fois par jour pour détecter les illusions.
-- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée
+- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée.
 - Au niveau 15 (ceinture rouge), il peut utiliser la capacité Frappe éclair une fois par jour, tous les 10 niveaux d'expérience. Pendant 10 secondes, toutes ses attaques infligent le maximum de dégâts.
-- Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
+- Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère oriental. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
 - Au niveau 25 (ceinture noire), il peut enduire son arme de poison une fois par jour (capacité Arme empoisonnée).
 - Au niveau 30, il peut protéger son esprit de toute attaque mentale une fois par jour (capacité Ordres chaotiques) et il gagne 20 % supplémentaires en Furtivité.
 - Au niveau 35 (premier dan), il est encore plus fort au combat (bonus de 1 au TAC0) et gagne une utilisation supplémentaire de la capacité Arme empoisonnée.
 
 ARME EMPOISONNÉE :
 Chaque coup réussi au cours du prochain round empoisonnera la cible. Chaque cible ne peut être affectée qu'une fois par round. Le montant des dégâts de poison dépend du niveau du personnage :
-1er : la cible subit 1 point de dégât de poison par seconde pendant 6 secondes (annulé par une sauvegarde contre la mort à +1)
-5ème : la cible subit 1 point de dégât de poison par seconde pendant 12 secondes (annulé par une sauvegarde contre la mort) et subit immédiatement 2 points de dégâts de poison (sans sauvegarde)
-9ème : la cible subit 1 point de dégât de poison par seconde pendant 18 secondes (annulé par une sauvegarde contre la mort à -1) et subit immédiatement 4 points de dégâts de poison (sans sauvegarde)
-13ème : la cible subit 1 point de dégât de poison par seconde pendant 24 secondes (annulé par une sauvegarde contre la mort à -2) et subit immédiatement 6 points de dégâts de poison (sans sauvegarde)
+- 1er : la cible subit 1 point de dégât de poison par seconde pendant 6 secondes (annulé par une sauvegarde contre la mort à +1)
+- 5ème : la cible subit 1 point de dégât de poison par seconde pendant 12 secondes (annulé par une sauvegarde contre la mort) et subit immédiatement 2 points de dégâts de poison (sans sauvegarde)
+- 9ème : la cible subit 1 point de dégât de poison par seconde pendant 18 secondes (annulé par une sauvegarde contre la mort à -1) et subit immédiatement 4 points de dégâts de poison (sans sauvegarde)
+- 13ème : la cible subit 1 point de dégât de poison par seconde pendant 24 secondes (annulé par une sauvegarde contre la mort à -2) et subit immédiatement 6 points de dégâts de poison (sans sauvegarde)
 
 
 Désavantages :
 - Ne peut pas poser de pièges.
-- Pénalité de 2 points à la Force, à la Constitution et au Charisme.
-- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, fléchette et arc court.
+- Pénalité de 2 points à la Force, à la Constitution et au Charisme à la création du personnage.
+- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, arc court et fléchette.
 - Ne peut pas être compétent dans les styles de combat armes à deux mains et épée et bouclier.
 - Ne peut pas se jumeler.
 - Doit être d'alignement chaotique.
 - Doit être un humain.~
-//- Au niveau 10 (ceinture violette), il gagne la capacité Coup étourdissant deux fois par jour. Il sait frapper les points vitaux de ses adversaires pour les assommer s'ils ratent un jet de sauvegarde contre les sorts.
 
-// Handling special classic game engine restriction: kit descriptions can't exceed 4815 characters, or the game crashes at chargen! So we need 2 description stringref: nnn for EE games and 1nnn for classic games.
 @1103 = ~SHURI NINJA : Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe pas la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des samouraïs et des autres clans rivaux de ninjas. Rares sont en effet les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
 
 Beaucoup s'affranchissent du Shurikai pour suivre leur propre voie, même s'il doivent constamment surveiller leurs arrières pour ne pas être victimes de la lame de leurs anciens compagnons d'armes. S'ils parviennent à rejoindre sans encombre les contrées occidentales, ils savent que les guildes de voleurs locales apprécient et recherchent ardemment leurs services. Des guildes entières ayant été décimées par un seul shuri ninja, personne n'ose les trahir. Le Kara-Tur comptant très peu de demi-humains, seuls les humains sont autorisés à bénéficier des enseignements secrets du Shurikai Ninjutsu.
@@ -57,9 +63,9 @@ Avantages :
 - Peut se spécialiser (deux étoiles) dans le maniement du katana, du cimeterre, des dagues, des fléchettes et de l'arc court.
 - Peut se spécialiser (deux étoiles) dans le style de combat d'arme à une main et allouer trois étoiles dans le style de combat à deux armes.
 
-À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin.
+À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin :
 - Au niveau 5 (ceinture bleue), il gagne la capacité Vision véritable deux fois par jour pour détecter les illusions.
-- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée
+- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée.
 - Au niveau 15 (ceinture rouge), il peut utiliser la capacité Frappe éclair une fois par jour, tous les 10 niveaux d'expérience. Pendant 10 secondes, toutes ses attaques infligent le maximum de dégâts.
 - Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
 - Au niveau 25 (ceinture noire), il peut enduire son arme de poison une fois par jour (capacité Arme empoisonnée) et infliger un montant de dégâts de poison dépendant de son niveau.
@@ -68,15 +74,16 @@ Avantages :
 
 Désavantages :
 - Ne peut pas poser de pièges.
-- Pénalité de 2 points à la Force, à la Constitution et au Charisme.
-- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, fléchette et arc court.
+- Pénalité de 2 points à la Force, à la Constitution et au Charisme à la création du personnage.
+- Ne peut utiliser que les armes suivantes : épée longue, épée courte, katana, cimeterre, dague, gourdin, bâton arbalète, arc court, fléchette et fronde.
 - Ne peut pas être compétent dans les styles de combat armes à deux mains et épée et bouclier.
 - Ne peut pas se jumeler.
 - Doit être d'alignement chaotique.
 - Doit être un humain.~
 
 
-// @104 = ~- Ne peut porter d'armure meilleure que celle de cuir~
+// EE only (for the moment): Shuri Ninja may not wear heavier armor than leather (sub-component #20)
+// -------------------------------------------------------------------------------------------------
 @104 = ~SHURI NINJA : Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe passe la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des Samouraïs et des autres clans rivaux de ninjas. Rares sont les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
 
 Beaucoup s'affranchissent du Shurikai pour suivre leur propre voie, même s'il doivent constamment surveiller leurs arrières pour ne pas être victimes de la lame de leurs anciens compagnons d'armes. S'ils parviennent à rejoindre sans encombre les contrées occidentales, ils savent que les guildes de voleurs locales apprécient et recherchent ardemment leurs services. Des guildes entières ayant été décimées par un seul shuri ninja, personne n'ose les trahir. Le Kara-Tur comptant très peu de demi-humains, seuls les humains sont autorisés à bénéficier des enseignements secrets du Shurikai Ninjutsu.
@@ -90,9 +97,9 @@ Avantages :
 - Peut se spécialiser (deux étoiles) dans le maniement du katana, du cimeterre, des dagues, des fléchettes et de l'arc court.
 - Peut se spécialiser (deux étoiles) dans le style de combat d'arme à une main et allouer trois étoiles dans le style de combat à deux armes.
 
-À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin.
+À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin :
 - Au niveau 5 (ceinture bleue), il gagne la capacité Vision véritable deux fois par jour pour détecter les illusions.
-- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée
+- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée.
 - Au niveau 15 (ceinture rouge), il peut utiliser la capacité Frappe éclair une fois par jour, tous les 10 niveaux d'expérience. Pendant 10 secondes, toutes ses attaques infligent le maximum de dégâts.
 - Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
 - Au niveau 25 (ceinture noire), il peut enduire son arme de poison une fois par jour (capacité Arme empoisonnée).
@@ -108,14 +115,16 @@ Chaque coup réussi au cours du prochain round empoisonnera la cible. Chaque cibl
 
 
 Désavantages :
-- Ne peut porter d'armure meilleure que celle de cuir
+- Ne peut porter d'armure meilleure que celle de cuir?
 - Ne peut pas poser de pièges.
-- Pénalité de 2 points à la Force, à la Constitution et au Charisme.
-- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, fléchette et arc court.
+- Pénalité de 2 points à la Force, à la Constitution et au Charisme à la création du personnage.
+- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, arc court et fléchette.
 - Ne peut pas être compétent dans les styles de combat armes à deux mains et épée et bouclier.
 - Ne peut pas se jumeler.
 - Doit être d'alignement chaotique.
 - Doit être un humain.~
+
+/* USELESS for the moment, but who knows in the future...
 @1104 = ~SHURI NINJA : Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe passe la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des Samouraïs et des autres clans rivaux de ninjas. Rares sont les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
 
 Beaucoup s'affranchissent du Shurikai pour suivre leur propre voie, même s'il doivent constamment surveiller leurs arrières pour ne pas être victimes de la lame de leurs anciens compagnons d'armes. S'ils parviennent à rejoindre sans encombre les contrées occidentales, ils savent que les guildes de voleurs locales apprécient et recherchent ardemment leurs services. Des guildes entières ayant été décimées par un seul shuri ninja, personne n'ose les trahir. Le Kara-Tur comptant très peu de demi-humains, seuls les humains sont autorisés à bénéficier des enseignements secrets du Shurikai Ninjutsu.
@@ -129,9 +138,9 @@ Avantages :
 - Peut se spécialiser (deux étoiles) dans le maniement du katana, du cimeterre, des dagues, des fléchettes et de l'arc court.
 - Peut se spécialiser (deux étoiles) dans le style de combat d'arme à une main et allouer trois étoiles dans le style de combat à deux armes.
 
-À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin.
+À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin :
 - Au niveau 5 (ceinture bleue), il gagne la capacité Vision véritable deux fois par jour pour détecter les illusions.
-- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée
+- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée.
 - Au niveau 15 (ceinture rouge), il peut utiliser la capacité Frappe éclair une fois par jour, tous les 10 niveaux d'expérience. Pendant 10 secondes, toutes ses attaques infligent le maximum de dégâts.
 - Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
 - Au niveau 25 (ceinture noire), il peut enduire son arme de poison une fois par jour (capacité Arme empoisonnée) et infliger un montant de dégâts de poison dépendant de son niveau.
@@ -139,17 +148,18 @@ Avantages :
 - Au niveau 35 (premier dan), il est encore plus fort au combat (bonus de 1 au TAC0) et gagne une utilisation supplémentaire de la capacité Arme empoisonnée.
 
 Désavantages :
-- Ne peut porter d'armure meilleure que celle de cuir
+- Ne peut porter d'armure meilleure que celle de cuir.
 - Ne peut pas poser de pièges.
-- Pénalité de 2 points à la Force, à la Constitution et au Charisme.
-- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, fléchette et arc court.
+- Pénalité de 2 points à la Force, à la Constitution et au Charisme à la création du personnage.
+- Ne peut utiliser que les armes suivantes : épée longue, épée courte, katana, cimeterre, dague, gourdin, bâton arbalète, arc court, fléchette et fronde.
 - Ne peut pas être compétent dans les styles de combat armes à deux mains et épée et bouclier.
 - Ne peut pas se jumeler.
 - Doit être d'alignement chaotique.
-- Doit être un humain.~
+- Doit être un humain.~*/
 
 
-// @105 = ~- Ne peut porter aucune armure.~
+// EE only (for the moment): Shuri Ninja may not wear any armor (sub-component #30)
+// --------------------------------------------------------------------------------
 @105 = ~SHURI NINJA : Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe passe la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des Samouraïs et des autres clans rivaux de ninjas. Rares sont les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
 
 Beaucoup s'affranchissent du Shurikai pour suivre leur propre voie, même s'il doivent constamment surveiller leurs arrières pour ne pas être victimes de la lame de leurs anciens compagnons d'armes. S'ils parviennent à rejoindre sans encombre les contrées occidentales, ils savent que les guildes de voleurs locales apprécient et recherchent ardemment leurs services. Des guildes entières ayant été décimées par un seul shuri ninja, personne n'ose les trahir. Le Kara-Tur comptant très peu de demi-humains, seuls les humains sont autorisés à bénéficier des enseignements secrets du Shurikai Ninjutsu.
@@ -163,9 +173,9 @@ Avantages :
 - Peut se spécialiser (deux étoiles) dans le maniement du katana, du cimeterre, des dagues, des fléchettes et de l'arc court.
 - Peut se spécialiser (deux étoiles) dans le style de combat d'arme à une main et allouer trois étoiles dans le style de combat à deux armes.
 
-À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin.
+À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin :
 - Au niveau 5 (ceinture bleue), il gagne la capacité Vision véritable deux fois par jour pour détecter les illusions.
-- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée
+- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée.
 - Au niveau 15 (ceinture rouge), il peut utiliser la capacité Frappe éclair une fois par jour, tous les 10 niveaux d'expérience. Pendant 10 secondes, toutes ses attaques infligent le maximum de dégâts.
 - Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
 - Au niveau 25 (ceinture noire), il peut enduire son arme de poison une fois par jour (capacité Arme empoisonnée).
@@ -183,12 +193,14 @@ Chaque coup réussi au cours du prochain round empoisonnera la cible. Chaque cibl
 Désavantages :
 - Ne peut porter aucune armure.
 - Ne peut pas poser de pièges.
-- Pénalité de 2 points à la Force, à la Constitution et au Charisme.
-- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, fléchette et arc court.
+- Pénalité de 2 points à la Force, à la Constitution et au Charisme à la création du personnage.
+- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, arc court et fléchette.
 - Ne peut pas être compétent dans les styles de combat armes à deux mains et épée et bouclier.
 - Ne peut pas se jumeler.
 - Doit être d'alignement chaotique.
 - Doit être un humain.~
+
+/* USELESS for the moment, but who knows in the future...
 @1105 = ~SHURI NINJA : Les shuri ninjas sont formés par le Shurikai, une organisation d'assassins ninjas qui opère dans tout le Kara-Tur. Ils se fondent dans les ombres, sont rapides, d'une redoutable efficacité au combat, et excellent dans le maniement des lames orientales, des armes de lancer et des arcs. Il est de notoriété publique qu'une cible désignée par le Shurikai ne passe passe la nuit. Leurs techniques de combat mortelles leur ont fait gagner le respect, mais aussi la haine farouche des Samouraïs et des autres clans rivaux de ninjas. Rares sont les combattants qui ont survécu après avoir croisé le fer avec un shuri ninja.
 
 Beaucoup s'affranchissent du Shurikai pour suivre leur propre voie, même s'il doivent constamment surveiller leurs arrières pour ne pas être victimes de la lame de leurs anciens compagnons d'armes. S'ils parviennent à rejoindre sans encombre les contrées occidentales, ils savent que les guildes de voleurs locales apprécient et recherchent ardemment leurs services. Des guildes entières ayant été décimées par un seul shuri ninja, personne n'ose les trahir. Le Kara-Tur comptant très peu de demi-humains, seuls les humains sont autorisés à bénéficier des enseignements secrets du Shurikai Ninjutsu.
@@ -202,9 +214,9 @@ Avantages :
 - Peut se spécialiser (deux étoiles) dans le maniement du katana, du cimeterre, des dagues, des fléchettes et de l'arc court.
 - Peut se spécialiser (deux étoiles) dans le style de combat d'arme à une main et allouer trois étoiles dans le style de combat à deux armes.
 
-À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin.
+À mesure qu'il augmente de niveau, le shuri ninja acquiert de nouvelles techniques redoutables qui perfectionnent sa science martiale et ses talents d'assassin :
 - Au niveau 5 (ceinture bleue), il gagne la capacité Vision véritable deux fois par jour pour détecter les illusions.
-- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée
+- Au niveau 10 (ceinture violette), il sait frapper les points vitaux de ses adversaires (Coup étourdissant deux fois par jour). Toutes ses attaques réussies au cours du round suivant obligent la victime à réussir un jet de sauvegarde contre les sorts sous peine d'être assommée.
 - Au niveau 15 (ceinture rouge), il peut utiliser la capacité Frappe éclair une fois par jour, tous les 10 niveaux d'expérience. Pendant 10 secondes, toutes ses attaques infligent le maximum de dégâts.
 - Au niveau 20 (ceinture marron), une fois par jour, il peut utiliser la capacité Paume vibratoire du moine, dont le secret a été volé dans un monastère. Sa prochaine attaque réussie force sa victime à réussir un jet de sauvegarde contre les sorts ou mourir.
 - Au niveau 25 (ceinture noire), il peut enduire son arme de poison une fois par jour (capacité Arme empoisonnée) et infliger un montant de dégâts de poison dépendant de son niveau.
@@ -214,16 +226,17 @@ Avantages :
 Désavantages :
 - Ne peut porter aucune armure.
 - Ne peut pas poser de pièges.
-- Pénalité de 2 points à la Force, à la Constitution et au Charisme.
-- Ne peut utiliser que les armes suivantes : katana, cimeterre, dague, fléchette et arc court.
+- Pénalité de 2 points à la Force, à la Constitution et au Charisme à la création du personnage.
+- Ne peut utiliser que les armes suivantes : épée longue, épée courte, katana, cimeterre, dague, gourdin, bâton arbalète, arc court, fléchette et fronde.
 - Ne peut pas être compétent dans les styles de combat armes à deux mains et épée et bouclier.
 - Ne peut pas se jumeler.
 - Doit être d'alignement chaotique.
-- Doit être un humain.~
+- Doit être un humain.~*/
 
 
-// Abilities
-// ---------
+/* ----------- *
+ *  Abilities  *
+// ----------- */
 @201 = ~Frappe éclair~
 @202 = ~Frappe éclair
 

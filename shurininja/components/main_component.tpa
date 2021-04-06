@@ -334,3 +334,57 @@ ACTION_IF (is_classic) BEGIN
 	BUT_ONLY IF_EXISTS
 
 END
+
+
+ACTION_IF (is_iwdee) BEGIN
+ 
+	// Adds 1 Ninjato and Wakizashi in 
+	ACTION_FOR_EACH store IN ~ehpomab~  // Pomab's Emporium (AR1007 Easthaven, prologue - Pomab's Emporium - first floor)
+							 ~waukeen~  // The Golden Lodge (AR9103 Lonelywood - Temple of Waukeen)
+	BEGIN
+
+		COPY_EXISTING ~%store%.sto~ ~override~
+
+			PATCH_IF (BUFFER_LENGTH >= 0x9c) BEGIN
+				PATCH_FOR_EACH sword IN ~SW1H48~ ~SW1H46~ BEGIN
+					ADD_STORE_ITEM "%sword%" AFTER ~SW1H43~ #0 #0 #0 ~IDENTIFIED~ #1
+				END
+			END
+
+		BUT_ONLY IF_EXISTS
+
+	END
+
+	// Adds 1 Katana, Ninjato and Wakizashi in Conlan's Smithy (AR2103 Kuldahar - Conlan's Smithy)
+	COPY_EXISTING ~kusmith.sto~ ~override~
+
+		PATCH_IF (BUFFER_LENGTH >= 0x9c) BEGIN
+			PATCH_FOR_EACH sword IN ~SW1H43~ ~SW1H48~ ~SW1H46~ BEGIN
+				ADD_STORE_ITEM "%sword%" AFTER ~SCIMITA~ #0 #0 #0 ~IDENTIFIED~ #1
+			END
+		END
+
+	BUT_ONLY IF_EXISTS
+
+	// Adds 1 Scimitar, Katana, Ninjato and Wakizashi in 
+	ACTION_FOR_EACH store IN ~ehinn~   // Erdane (AR1008 Easthaven, prologue - Snowdrift Inn)
+							 ~emmeric~ // Emmerich's Archery (AR9104 )
+							 ~hobart~  // Hobart's Trove (AR9101 Lonelywood, Whistling Gallows, first floor - AR9700 Anauroch Castle, outer courtyard - AR9715 Anauroch Castle, hideout of Hobart)
+							 ~kuinn1~  // The Evening Shade (AR2114 Kuldahar - Evening Shade Inn - first floor)
+							 ~kuinn2~  // id.
+							 ~kuinn3~  // id.
+	BEGIN
+
+		COPY_EXISTING ~%store%.sto~ ~override~
+
+			PATCH_IF (BUFFER_LENGTH >= 0x9c) BEGIN
+				PATCH_FOR_EACH sword IN ~SW1H20~ ~SW1H48~ ~SW1H46~ ~SW1H43~ BEGIN
+					ADD_STORE_ITEM "%sword%" BEFORE ~SW2H01~ #0 #0 #0 ~IDENTIFIED~ #1
+				END
+			END
+
+		BUT_ONLY IF_EXISTS
+
+	END
+
+END

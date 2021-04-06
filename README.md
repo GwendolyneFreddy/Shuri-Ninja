@@ -286,7 +286,7 @@ The two next components don't need further explanation, I guess. &#128521;</br>
   - Added weapons restriction: from now on, Shuri Ninja can't equip long sword, short sword, quarterstaff, club, crossbow and sling, as per description. Unfortunately, IE limitations does not allow to code it for classic games, without breaking other mods compatibility.
   - Shuri Ninha can't wear any shield.
   - Added specific Stunning Blow and Quivering Palm abilities: applied op#248 to any weapon wielded (EE games: parameter2 is set to 4 - fists only).
-- BGT and tutu: Added katanas, Ninjatos and Wakizashis to the games, so that she Shuri Ninja kit should be friendly playable.
+- BGT, tutu and IWD:EE: Added katanas, Ninjatos and Wakizashis to the games, so that she Shuri Ninja kit should be friendly playable.
 - Removed one extra Blinding strike at 40th level.
 - Fixed innate Chaotic Commands ability: duration reduced to 1 turn and included a few <a href="https://www.gibberlings3.net/forums/topic/29670-is-this-possible-to-add-in-bg2-fixpack/?tab=comments#comment-263138">fixes</a>.
 - Fixed wrong proficiencies pips.
