@@ -1,0 +1,52 @@
+/* ======================================================================================================================= *
+ *  v 2.0.0                                                                                                                *
+ *                   D E C L A R A T I O N    o f    I W D : E E    P L A T F O R M    V A R I A B L E S                   *
+ *                                                                                                                         *
+ * ======================================================================================================================= */
+
+/* =================================== *
+ *  tp2, d, and baf parsing variables  *
+ * =================================== */
+
+OUTER_SPRINT "tutorbgt"        "bg2"
+OUTER_SPRINT "tutubgtbgee"     "bg2"
+
+OUTER_SPRINT "tutu_var"        ""
+OUTER_SPRINT "tutu_scriptbg"   ""  // BGT 'BG' prefix
+OUTER_SPRINT "tutu_scripta"    "a"
+OUTER_SPRINT "tutu_scriptb"    "b"
+OUTER_SPRINT "tutu_scriptc"    "c"
+OUTER_SPRINT "tutu_scriptd"    "d"
+OUTER_SPRINT "tutu_scripte"    "e"
+OUTER_SPRINT "tutu_scriptf"    "f"
+OUTER_SPRINT "tutu_scriptg"    "g"
+OUTER_SPRINT "tutu_scripth"    "h"
+OUTER_SPRINT "tutu_scripti"    "i"
+OUTER_SPRINT "tutu_scriptj"    "j"
+OUTER_SPRINT "tutu_scriptk"    "k"
+OUTER_SPRINT "tutu_scriptl"    "l"
+OUTER_SPRINT "tutu_scriptm"    "m"
+OUTER_SPRINT "tutu_scriptn"    "n"
+OUTER_SPRINT "tutu_scripto"    "o"
+OUTER_SPRINT "tutu_scriptp"    "p"
+OUTER_SPRINT "tutu_scriptq"    "q"
+OUTER_SPRINT "tutu_scriptr"    "r"
+OUTER_SPRINT "tutu_scripts"    "s"
+OUTER_SPRINT "tutu_scriptt"    "t"
+OUTER_SPRINT "tutu_scriptu"    "u"
+OUTER_SPRINT "tutu_scriptv"    "v"
+OUTER_SPRINT "tutu_scriptw"    "w"
+OUTER_SPRINT "tutu_scriptx"    "x"
+OUTER_SPRINT "tutu_scripty"    "y"
+OUTER_SPRINT "tutu_scriptz"    "z"
+OUTER_SPRINT "percentage_sign" "%"
+
+// EET naming convention
+OUTER_SPRINT "eet_var"         ""  // EET '_' suffix for conflicting resources with 7 or less characters
+
+
+/* ======= *
+ *  Areas  *
+ * ======= */
+
+	OUTER_SPRINT "ESewers" "GWGW0226" // fake name to prevent AR0226 area to be patched!

@@ -1,14 +1,13 @@
 BACKUP ~shurininja/backup~
 
 //AUTHOR ~Twinblades2~
-SUPPORT ~à définir une fois le mod sorti et SHS revenu~
+SUPPORT ~Gwendolyne at https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/33166-shuri-ninja-kit-rapport-de-bugs-bug-reports.html~
 
-VERSION ~2.0.0 beta~
+VERSION ~2.0.0~
 
-README ~shurininja/readme/shurininja-readme-%LANGUAGE%.txt~	~shurininja/readme/sshurininja-readme-english.txt~
+README ~shurininja/readme/shurininja-readme-%LANGUAGE%.txt~	~shurininja/readme/shurininja-readme-english.txt~
 
 AUTO_EVAL_STRINGS
-
 
 ALWAYS
 
@@ -35,43 +34,46 @@ LANGUAGE ~Francais (Traduction : Aalkaor)~
 /* =========================================================== *
  *          ORIGINAL SHURI NINJA KIT (COMPONENT #10)           *
  * ============================================================*/
-
-BEGIN @10															// ~Shuri Ninja Kit (legacy)~
-	REQUIRE_PREDICATE GAME_IS ~tob bgt bgee bg2ee eet~ @11			// ~This mod requires ToB, BGT, BG:EE, BG2:EE or EET to be installed.~
-	REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @12	// ~This mod is not compatible with Kit Revisions.~
-	SUBCOMPONENT @1													// ~Shuri Ninja Kit~
-	DESIGNATED 10
+BEGIN @10                                                               // ~Shuri Ninja Kit (legacy)~
+SUBCOMPONENT @1                                                         // ~Shuri Ninja Kit~
+DESIGNATED 10 LABEL "gw_shuri_ninja_kit_original"
+REQUIRE_PREDICATE GAME_IS ~tob bgt tutu tutu_totsc bgee bg2ee eet~ @51  // ~This mod requires ToB, BGT, tutu, BG:EE, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @52            // ~This mod is not compatible with Kit Revisions.~
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @54                                  // ~This mod needs to be installed before EET_End on your EET install.~
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @54
 
 	OUTER_SET GW_shuri_kit = 1
 	OUTER_SET GW_shuri_desc = 103 + tob_string
-	INCLUDE ~%MOD_FOLDER%/components/first_component.tpa~
+	INCLUDE ~%MOD_FOLDER%/components/main_component.tpa~
 
 
 /* =========================================================== *
- *       SHURI NINJA KIT LEATHER ARMOR (COMPONENT #20)        *
+ *       SHURI NINJA KIT LEATHER ARMOR (COMPONENT #20)         *
  * ============================================================*/
-
-BEGIN @20															// ~Shuri Ninja Kit may not wear heavier armor than leather~
-	REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @21					// ~This mod requires BG:EE, BG2:EE or EET to be installed.~
-	REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @12	// ~This mod is not compatible with Kit Revisions~
-	SUBCOMPONENT @1
-	DESIGNATED 20
+BEGIN @20                                                               // ~Shuri Ninja Kit may not wear heavier armor than leather~
+SUBCOMPONENT @1
+DESIGNATED 20 LABEL "gw_shuri_ninja_kit_only_leather"
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @53					        // ~This mod requires BG:EE, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @52
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @54
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @54
 
 	OUTER_SET GW_shuri_kit = 2
 	OUTER_SET GW_shuri_desc = 104 + tob_string
-	INCLUDE ~%MOD_FOLDER%/components/first_component.tpa~
+	INCLUDE ~%MOD_FOLDER%/components/main_component.tpa~
 
 
 /* =========================================================== *
- *         SHURI NINJA KIT NO ARMORS (COMPONENT #30)          *
+ *         SHURI NINJA KIT NO ARMORS (COMPONENT #30)           *
  * ============================================================*/
-
-BEGIN @30															// ~Shuri Ninja Kit may not wear any armor~
-	REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @121					// ~This mod requires BG:EE, BG2:EE or EET to be installed.~
-	REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @12	// ~This mod is not compatible with Kit Revisions~
-	SUBCOMPONENT @1
-	DESIGNATED 30
+BEGIN @30                                                               // ~Shuri Ninja Kit may not wear any armor~
+SUBCOMPONENT @1
+DESIGNATED 30 LABEL "gw_shuri_ninja_kit_no armor"
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @53					        // ~This mod requires BG:EE, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @52
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @54
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @54
 
 	OUTER_SET GW_shuri_kit = 3
 	OUTER_SET GW_shuri_desc = 105 + tob_string
-	INCLUDE ~%MOD_FOLDER%/components/first_component.tpa~
+	INCLUDE ~%MOD_FOLDER%/components/main_component.tpa~

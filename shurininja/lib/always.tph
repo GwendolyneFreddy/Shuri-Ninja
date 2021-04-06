@@ -1,10 +1,10 @@
-/* ============================================ *
- *                                              *
- *                 ALWAYS BLOCK                 *
- *                                              *
- * ============================================ */
+/* ========================================== *
+ *  v 6.0.0                                   *
+ *          A L W A Y S    B L O C K          *
+ *                                            *
+ * ========================================== */
 
-// Concept borrowed from DavidW's Immutability and encapsulation in mod design (https://github.com/Gibberlings3/immutable)
+// Concept borrowed from DavidW's Immutability and encapsulation in mod design ( https://github.com/Gibberlings3/immutable )
 
 
 /* =================================================================== *
@@ -14,117 +14,136 @@
 ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
 
 	OUTER_SET always_once_section = 1
-
-	ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN FAIL @13 END // Modmerge check
-
-	CLEAR_EVERYTHING
 	SILENT
 
 
-	/* -------------------------------------------------------------------------------- *
-	 *    Determines which game is installed and if the game is an Enhanced Edition.    *
-	 * -------------------------------------------------------------------------------- */
+	/* -------------------------- *
+	 *    Sod: Modmerge check.    *
+	 * -------------------------- */
 
-	OUTER_SET is_ee =(GAME_IS "bgee bg2ee eet") ? 1 : 0
-	OUTER_SET is_tob = (GAME_IS ~bgt tob tutu tutu_totsc~) ? 1 : 0				// based on vanilla ToB engine
-	OUTER_SET is_tutu = (GAME_IS ~tutu tutu_totsc~) ? 1 : 0						// tutu
-	OUTER_SET is_bgee = (GAME_IS "bgee" AND NOT GAME_INCLUDES ~sod~) ? 1 : 0	// bgee without SoD
-	OUTER_SET is_sod = (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~) ? 1 : 0			// SoD
-	OUTER_SET is_bg2ee = (GAME_IS "bg2ee") ? 1 : 0								// b2gee
-	OUTER_SET is_eet = (GAME_IS "eet") ? 1 : 0									// eet
-	OUTER_SET is_iwdee = (GAME_IS "iwdee") ? 1 : 0								// iwdee
+	ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) BEGIN FAIL @1000 END // Modmerge check
 
 
-	/* --------------------------------------------------------------------------- *
-	 *    Loads in any shared function libraries (general macros and functions)    *
-	 * --------------------------------------------------------------------------- */
+	/* ----------------------------------------- *
+	 *    Determines which game is installed.    *
+	 * ----------------------------------------- */
 
-	INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tph~		// Shared general functions and macros library (Bibliothèque de fonctions et de macros générales).
-	INCLUDE ~%MOD_FOLDER%/lib/fl#add_kit_ee.tpa~	// An ADD_KIT supplement for EE-type games
+	OUTER_SET is_tutu    = (GAME_IS ~tutu tutu_totsc~) ? 1 : 0                             // tutu
+	OUTER_SET is_bgt     = (GAME_IS ~bgt~) ? 1 : 0                                         // bgt
+	OUTER_SET is_tob     = (GAME_IS ~tob ca~ AND (is_tutu = 0 ) AND (is_bgt = 0)) ? 1 : 0  // based on classical ToB standalone
 
+	OUTER_SET is_bgee    = (GAME_IS "bgee" AND NOT GAME_INCLUDES ~sod~) ? 1 : 0            // bgee without SoD
+	OUTER_SET is_sod     = (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~) ? 1 : 0                // SoD
+	OUTER_SET is_bg2ee   = (GAME_IS "bg2ee") ? 1 : 0                                       // b2gee
+	OUTER_SET is_iwdee   = (GAME_IS "iwdee") ? 1 : 0                                       // iwdee
+	OUTER_SET is_eet     = (GAME_IS "eet") ? 1 : 0                                         // eet
+	OUTER_SET is_ee      = (GAME_IS "bgee bg2ee iwdee eet") ? 1 : 0                        // based on EE games, except PSTEE
+	OUTER_SET is_classic = (is_ee = 0) ? 1 : 0                                             // based classic games
 
-PRINT "CONTROL VARIABLES for DEBUGGING:
-is_ee = %is_ee% - is_tob = %is_tob% - is_tutu %is_tutu% - is_bgee = %is_bgee% - is_sod = %is_sod% - is_bg2ee = %is_bg2ee% - is_eet = %is_eet% - is_iwdee = %is_iwdee%"
+	ACTION_IF is_tutu BEGIN
+		INCLUDE ~%MOD_FOLDER%/arrays/gw_tutu_cpmvars.tpa~
+		PRINT @1001 // ~Tutu install detected.~
+	END
+	ACTION_IF is_bgt BEGIN
+		INCLUDE ~%MOD_FOLDER%/arrays/gw_bgt_cpmvars.tpa~
+		PRINT @1003 // ~BGT install detected.~
+	END
+	ACTION_IF is_tob BEGIN
+		INCLUDE ~%MOD_FOLDER%/arrays/gw_bg2_cpmvars.tpa~
+		PRINT @1002 // ~Throne of Bhaal install detected.~
+	END
+	ACTION_IF is_bgee BEGIN
+		INCLUDE ~%MOD_FOLDER%/arrays/gw_bgee_cpmvars.tpa~
+		PRINT @1004 // ~Baldur's Gate Enhanced Edition install detected.~
+	END
+	ACTION_IF is_sod BEGIN
+		INCLUDE ~%MOD_FOLDER%/arrays/gw_bgee_cpmvars.tpa~
+		PRINT @1005 // ~Siege of Dragonspear install detected.~
+	END
+	ACTION_IF is_bg2ee BEGIN
+		INCLUDE ~%MOD_FOLDER%/arrays/gw_bg2_cpmvars.tpa~
+		PRINT @1006 // ~Baldur's Gate II Enhanced Edition install detected.~
+	END
+	ACTION_IF is_eet BEGIN
+		INCLUDE ~%MOD_FOLDER%/arrays/gw_eet_cpmvars.tpa~
+		PRINT @1007 // ~Enhanced Edition Trilogy install detected.~
+	END
+	ACTION_IF is_iwdee BEGIN
+		INCLUDE ~%MOD_FOLDER%/arrays/gw_iwdee_cpmvars.tpa~
+		PRINT @1008 // ~Icewind Dale Enhanced Edition install detected.~
+	END
 
 
 	/* -------------------------- *
 	 *    Creates a blank file    *
 	 * -------------------------- */
-SILENT
-<<<<<<<< .../shurininja-inline/blank
+
+	SILENT
+	<<<<<<<< .../shurininja-inlined/blank
 
 >>>>>>>>
-PRINT "1 shuri_force_tra_rebuild = %shuri_force_tra_rebuild%"
 
-	/* ----------------------------------------------------------- *
-	 *    Sets the default variables if they're not set already    *
-	 * ----------------------------------------------------------- */
 
-	OUTER_SPRINT configuration-default "shurininja.ini"		// default configuration file to read initial configuration options
+	/* ------------------------------------------------------- *
+	 *    Sets default variables if they're not set already    *
+	 * ------------------------------------------------------- */
 
 	ACTION_IF !VARIABLE_IS_SET base_language BEGIN
 		OUTER_SPRINT base_language "english"
 	END
 
 	// Handling special classic game engine restriction: kit descriptions can't exceed 4815 characters, or the game crashes at chargen!
-	OUTER_SET tob_string = (is_tob = 1) ? 1000 : 0
+	OUTER_SET tob_string = (is_classic = 1) ? 1000 : 0
 
 
-	/* -------------------------------------- *
-	 *    Reading .ini configuration files    *
-	 * -------------------------------------- */
-PRINT "configuration-default = %configuration-default%"
-	ACTION_IF (VARIABLE_IS_SET configuration-default) BEGIN
-		OUTER_SPRINT ini_to_read "%MOD_FOLDER%/%configuration-default%"
-		LAM ~GW_READ_INI_FILE~
-	END
-PRINT "2 shuri_force_tra_rebuild = %shuri_force_tra_rebuild%"
+	/* --------------------------------------------------------------------------- *
+	 *    Loads in any shared function libraries (general macros and functions)    *
+	 * --------------------------------------------------------------------------- */
 
-	/* --------------------------------------------------------------------------------- *
-	 *                     Handling of correctly formatted tra-files                     *
-	 *    Copies tra files into the autotra folder (to leave the originals untouched)    *
-	 * --------------------------------------------------------------------------------- */
+	INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tph~     // Shared general functions and macros library (Bibliothèque de fonctions et de macros générales).
+	INCLUDE ~%MOD_FOLDER%/lib/fl#add_kit_ee.tpa~    // An ADD_KIT supplement for EE-type games
 
-	DEFINE_ACTION_FUNCTION ~autotra_workaround~ BEGIN
-		MKDIR "%MOD_FOLDER%/lang/autotra"
-		MKDIR "%MOD_FOLDER%/lang/autotra/%base_language%"
-		MKDIR "%MOD_FOLDER%/lang/autotra/%LANGUAGE%"
-		COPY ~%MOD_FOLDER%/lang/%LANGUAGE%~	~%MOD_FOLDER%/lang/autotra/%LANGUAGE%~
-		ACTION_MATCH "%LANGUAGE%" WITH
-			"%base_language%" BEGIN END
-			DEFAULT
-				COPY ~%MOD_FOLDER%/lang/%base_language%~	~%MOD_FOLDER%/lang/autotra/%base_language%~
-		END
-	END
 
-	/* Converts tra files to UTF-8 */
-PRINT "3 shuri_force_tra_rebuild = %shuri_force_tra_rebuild%"
-	ACTION_IF (!VARIABLE_IS_SET shuri_force_tra_rebuild) BEGIN
-		LAF ~check_ini~ STR_VAR ini = shuri_force_tra_rebuild RET shuri_force_tra_rebuild = value END
-	END
-PRINT "4 shuri_force_tra_rebuild = %shuri_force_tra_rebuild%"
-	ACTION_IF (!FILE_EXISTS "%MOD_FOLDER%/shuri_languages_installed.mrk" || shuri_force_tra_rebuild) BEGIN
-		COPY ~.../shurininja-inline/blank~ ~%MOD_FOLDER%/shuri_languages_installed.mrk~	// Converts once .tra files
-		LAF ~autotra_workaround~ END
+	/* ------------------------------------------- *
+	 *    Convert strings to UTF-8 for EE games    *
+	 * ------------------------------------------- */
+
+	// Converts once .tra files
+	ACTION_IF (!FILE_EXISTS "%MOD_FOLDER%/shuri_languages_installed.mrk") BEGIN
+
+		COPY ~.../shurininja-inlined/blank~ ~%MOD_FOLDER%/shuri_languages_installed.mrk~
+
 		ACTION_DEFINE_ARRAY shuri#noconvert BEGIN setup END
+		// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
 		ACTION_DEFINE_ARRAY shuri#reload BEGIN shurininja END
-		LAF HANDLE_CHARSETS 
-			INT_VAR	infer_charsets = 1
-			STR_VAR	tra_path = EVAL ~%MOD_FOLDER%/lang/autotra~
-					noconvert_array = shuri#noconvert
-					reload_array = shuri#reload
-					default_language = english
-					iconv_path = EVAL ~%MOD_FOLDER%/lang/iconv~
+		LAF HANDLE_CHARSETS
+			INT_VAR
+				infer_charsets = 1
+			STR_VAR
+				tra_path = EVAL ~%MOD_FOLDER%/lang~
+				noconvert_array = shuri#noconvert
+				reload_array = shuri#reload
+				default_language = english
 		END
+
 	END
 
-	/* TRAs declared in LANGUAGE must be reloaded - by hand, because of the copying (for non-EE version */
-	LOAD_TRA ~%MOD_FOLDER%/lang/autotra/%base_language%/setup.tra~
-	LOAD_TRA ~%MOD_FOLDER%/lang/autotra/%LANGUAGE%/setup.tra~
 
-	/* TRAs used in classic games must be loadedby hand */
-	ACTION_IF (is_tob) BEGIN
-		LOAD_TRA ~%MOD_FOLDER%/lang/autotra/%base_language%/shurininja.tra~	~%MOD_FOLDER%/lang/autotra/%LANGUAGE%/shurininja.tra~
+	/* --------------------------------------------------------- *
+	 *    TRAs declared in LANGUAGE must be reloaded             *
+	 *    by hand, because of the copying (for non-EE version    *
+	 * --------------------------------------------------------- */
+
+	LOAD_TRA ~%MOD_FOLDER%/lang/%base_language%/setup.tra~
+	LOAD_TRA ~%MOD_FOLDER%/lang/%LANGUAGE%/setup.tra~
+
+	// TRAs used in original games must be loaded by hand
+	ACTION_IF (NOT is_ee) BEGIN
+		LOAD_TRA ~%MOD_FOLDER%/lang/%base_language%/shurininja.tra~	~%MOD_FOLDER%/lang/%LANGUAGE%/shurininja.tra~
 	END
+
+PRINT "CONTROL VARIABLES for DEBUGGING:
+is_ee = %is_ee% - is_tob = %is_tob% - is_tutu %is_tutu% - is_bgee = %is_bgee% - is_sod = %is_sod% - is_bg2ee = %is_bg2ee% - is_eet = %is_eet% - is_iwdee = %is_iwdee%"
+	SILENT
 
 END	// of ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
