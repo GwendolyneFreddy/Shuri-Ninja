@@ -1,0 +1,52 @@
+/* ======================================================================================================================= *
+ *  v 2.0.0                                                                                                                *
+ *                     D E C L A R A T I O N    o f    T U T U    P L A T F O R M    V A R I A B L E S                     *
+ *                                                                                                                         *
+ * ======================================================================================================================= */
+
+/* =================================== *
+ *  tp2, d, and baf parsing variables  *
+ * =================================== */
+
+OUTER_SPRINT "tutorbgt"        "tutu"
+OUTER_SPRINT "tutubgtbgee"     "tutu"
+
+OUTER_SPRINT "tutu_var"        "_"
+OUTER_SPRINT "tutu_scriptbg"   "_"  // BGT 'BG' prefix
+OUTER_SPRINT "tutu_scripta"    "_"
+OUTER_SPRINT "tutu_scriptb"    "_"
+OUTER_SPRINT "tutu_scriptc"    "_"
+OUTER_SPRINT "tutu_scriptd"    "_"
+OUTER_SPRINT "tutu_scripte"    "_"
+OUTER_SPRINT "tutu_scriptf"    "_"
+OUTER_SPRINT "tutu_scriptg"    "_"
+OUTER_SPRINT "tutu_scripth"    "_"
+OUTER_SPRINT "tutu_scripti"    "_"
+OUTER_SPRINT "tutu_scriptj"    "_"
+OUTER_SPRINT "tutu_scriptk"    "_"
+OUTER_SPRINT "tutu_scriptl"    "_"
+OUTER_SPRINT "tutu_scriptm"    "_"
+OUTER_SPRINT "tutu_scriptn"    "_"
+OUTER_SPRINT "tutu_scripto"    "_"
+OUTER_SPRINT "tutu_scriptp"    "_"
+OUTER_SPRINT "tutu_scriptq"    "_"
+OUTER_SPRINT "tutu_scriptr"    "_"
+OUTER_SPRINT "tutu_scripts"    "_"
+OUTER_SPRINT "tutu_scriptt"    "_"
+OUTER_SPRINT "tutu_scriptu"    "_"
+OUTER_SPRINT "tutu_scriptv"    "_"
+OUTER_SPRINT "tutu_scriptw"    "_"
+OUTER_SPRINT "tutu_scriptx"    "_"
+OUTER_SPRINT "tutu_scripty"    "_"
+OUTER_SPRINT "tutu_scriptz"    "_"
+OUTER_SPRINT "percentage_sign" "%"
+
+// EET naming convention
+OUTER_SPRINT "eet_var"         ""  // EET '_' suffix for conflicting resources with 7 or less characters
+
+
+/* ======= *
+ *  Areas  *
+ * ======= */
+
+	OUTER_SPRINT "ESewers" "FW0226"
