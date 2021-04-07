@@ -13,10 +13,11 @@
 
 #### Dépôt - Repository
 [![Created Badge](https://badges.pufler.dev/created/GwendolyneFreddy/Shuri-Ninja?style=plastic&label=Created%20-%20Cr%C3%A9ation)](https://badges.pufler.dev)
-![GitHub repo size](https://img.shields.io/github/repo-size/GwendolyneFreddy/Shuri-Ninja?style=plastic&label=repo%20size%-%20taille)
+![GitHub repo size](https://img.shields.io/github/repo-size/GwendolyneFreddy/Shuri-Ninja?style=plastic&label=repo%20size%20-%20taille)
 [![Updated Badge](https://badges.pufler.dev/updated/GwendolyneFreddy/Shuri-Ninja?style=plastic&label=Updated%20-%20Mise%20%C3%A0%20jour)](https://badges.pufler.dev)
 [![Visits Badge](https://badges.pufler.dev/visits/GwendolyneFreddy/Shuri-Ninja?color=cyan&style=plastic&label=Visits%20-%20Visites)](https://badges.pufler.dev)
-![GitHub release (latest by date)](https://img.shields.io/github/downloads/gwendolynefreddy/Shuri-Ninja/latest/total?color=gold&label=downloads%20-%20t%C3%A9l%C3%A9chargements%20latest&style=plastic)
+
+![GitHub release (latest by date)](https://img.shields.io/github/downloads/gwendolynefreddy/Shuri-Ninja/latest/total?color=gold&label=downloads%20latest%20release%20-%20t%C3%A9l%C3%A9chargements%20dernière%20version&style=plastic)
 ![GitHub all releases](https://img.shields.io/github/downloads/gwendolynefreddy/Shuri-Ninja/total?label=out%20of%20-%20sur%20un%20total%20de&color=yellow&style=plastic)
 
 ## 
