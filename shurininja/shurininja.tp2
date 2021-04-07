@@ -34,12 +34,12 @@ LANGUAGE ~Francais (Traduction : Aalkaor)~
 /* =========================================================== *
  *          ORIGINAL SHURI NINJA KIT (COMPONENT #10)           *
  * ============================================================*/
-BEGIN @10                                                               // ~Shuri Ninja Kit (legacy)~
-SUBCOMPONENT @1                                                         // ~Shuri Ninja Kit~
+BEGIN @10                                                                     // ~Shuri Ninja Kit (legacy)~
+SUBCOMPONENT @1                                                               // ~Shuri Ninja Kit~
 DESIGNATED 10 LABEL "gw_shuri_ninja_kit_original"
-REQUIRE_PREDICATE GAME_IS ~tob bgt tutu tutu_totsc bgee bg2ee eet~ @51  // ~This mod requires ToB, BGT, tutu, BG:EE, BG2:EE or EET to be installed.~
-REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @52            // ~This mod is not compatible with Kit Revisions.~
-FORBID_COMPONENT ~EET_end.tp2~ ~0~ @54                                  // ~This mod needs to be installed before EET_End on your EET install.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt tutu tutu_totsc bgee bg2ee iwdee eet~ @51  // ~This mod requires ToB, BGT, tutu, BG:EE, BG2:EE, IWD:EE or EET to be installed.~
+REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @52                  // ~This mod is not compatible with Kit Revisions.~
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @54                                        // ~This mod needs to be installed before EET_End on your EET install.~
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @54
 
 	OUTER_SET GW_shuri_kit = 1
@@ -50,10 +50,10 @@ FORBID_COMPONENT ~EET_end.tp2~ ~1~ @54
 /* =========================================================== *
  *       SHURI NINJA KIT LEATHER ARMOR (COMPONENT #20)         *
  * ============================================================*/
-BEGIN @20                                                               // ~Shuri Ninja Kit may not wear heavier armor than leather~
+BEGIN @20                                                                     // ~Shuri Ninja Kit may not wear heavier armor than leather~
 SUBCOMPONENT @1
 DESIGNATED 20 LABEL "gw_shuri_ninja_kit_only_leather"
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @53					        // ~This mod requires BG:EE, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee iwdee eet~ @53					      // ~This mod requires BG:EE, BG2:EE, IWD:EE or EET to be installed.~
 REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @52
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @54
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @54
@@ -66,10 +66,10 @@ FORBID_COMPONENT ~EET_end.tp2~ ~1~ @54
 /* =========================================================== *
  *         SHURI NINJA KIT NO ARMORS (COMPONENT #30)           *
  * ============================================================*/
-BEGIN @30                                                               // ~Shuri Ninja Kit may not wear any armor~
+BEGIN @30                                                                     // ~Shuri Ninja Kit may not wear any armor~
 SUBCOMPONENT @1
 DESIGNATED 30 LABEL "gw_shuri_ninja_kit_no armor"
-REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @53					        // ~This mod requires BG:EE, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee iwdee eet~ @53					      // ~This mod requires BG:EE, BG2:EE, IWD:EE or EET to be installed.~
 REQUIRE_PREDICATE (NOT MOD_IS_INSTALLED ~kit_rev.tp2~ 0) @52
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @54
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @54

@@ -9,7 +9,7 @@
 <div align="center"><h1>Shuri Ninja - Thief kit</h1>
 
 <h3>A mod for Baldur's Gate II:ToB (original and EE games),<br>
-Baldur's Gate Trilogy, Tutu, BG:EE, SoD and EET<h3>
+Baldur's Gate Trilogy, Tutu, BG:EE, SoD, IWD:EE and EET<h3>
 
 </div><br />
 
@@ -281,7 +281,7 @@ The two next components don't need further explanation, I guess. &#128521;</br>
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance. :wink:.
 - Commented code as much as possible.
 - Added two sub-components (EE only): "*Shuri Ninja may not wear heavier armor than leather*" and "*Shuri Ninja may not wear any armor*".
-- Added native BG:EE and BG2EE compatibility (probably with EET, but not yet tested):
+- Added native BG:EE, BG2EE and IW:EE compatibility (probably with EET, but not yet tested):
   - Added armor restrictions (new sub-components).
   - Added weapons restriction: from now on, Shuri Ninja can't equip long sword, short sword, quarterstaff, club, crossbow and sling, as per description. Unfortunately, IE limitations does not allow to code it for classic games, without breaking other mods compatibility.
   - Shuri Ninja can't wear any shield.
